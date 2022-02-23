@@ -1,0 +1,6 @@
+update_consumer_goods_factor = {
+	set_variable = { consumer_goods_factor_after = modifier@mt_consumer_goods_factor }
+	set_temp_variable = {temp = modifier@mt_consumer_goods_production_efficency}
+	add_to_temp_variable = {temp = 1.0 }
+	divide_variable = { consumer_goods_factor_after = temp }
+}

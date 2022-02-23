@@ -1,0 +1,12 @@
+mt_consumer_goods_factor = {
+	color_type = bad
+	value_type = percentage
+	precision = 0
+
+}
+
+mt_consumer_goods_production_efficency = {
+	color_type = good
+	value_type = percentage
+	precision = 0
+}

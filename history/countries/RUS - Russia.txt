@@ -1,0 +1,252 @@
+﻿capital = 195
+
+oob = "RUS_1936"
+set_cosmetic_tag = RUS_imperia
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	naval_bomber1 = 1
+}
+
+set_convoys = 20
+
+
+	set_autonomy = {
+		target = FIN
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.2
+	}
+
+	set_autonomy = {
+		target = POL
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.2
+	}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 53
+	liberalism = 21
+	socdem = 8
+	libsoc = 1
+	marxism = 11
+	communism = 1
+	fascism = 3
+	strasserism = 0
+	neutrality = 1
+	paternalism = 1
+}
+
+create_country_leader = {
+	name = "Mikhail Romanov"
+	desc = "POLITICS_MIKHAIL_ROMANOV_DESC"
+	picture = "Mikhail_Romanov.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		his_imperial_majesty
+	}
+}
+
+create_country_leader = {
+	name = "Mikhail Romanov"
+	desc = "POLITICS_MIKHAIL_ROMANOV_DESC"
+	picture = "Mikhail_Romanov.dds"
+	expire = "1965.1.1"
+	ideology = libetrade
+	traits = {
+		his_imperial_majesty
+	}
+}
+
+create_country_leader = {
+	name = "Mikhail Romanov"
+	desc = "POLITICS_MIKHAIL_ROMANOV_DESC"
+	picture = "Mikhail_Romanov.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		his_imperial_majesty
+	}
+}
+
+create_country_leader = {
+	name = "Juliy Martov"
+	desc = ""
+	picture = "Juliy_Martov.dds"
+	expire = "1965.1.1"
+	ideology = marxist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Grigory Zinoviev"
+	desc = ""
+	picture = "Grigory_Zinoviev.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Konstantin Rodzaevsky"
+	desc = ""
+	picture = "Konstantin_Rodzaevsky.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Anastasiy Vonsyatsky"
+	desc = ""
+	picture = "Anastasiy_Vonsyatsky.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Lavr Kornilov"
+	desc = ""
+	picture = "Lavr_Kornilov.dds"
+	expire = "1965.1.1"
+	ideology = paternalautocracy
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Leon Trotsky"
+	desc = ""
+	picture = "Leon_Trotsky.dds"
+	expire = "1965.1.1"
+	ideology = liberal_socialism
+	traits = {
+		#
+	}
+}
+
+
+
+create_field_marshal = {
+	name = "Lavr Kornilov"
+		picture = "Lavr_Kornilov.dds"
+	traits = {  }
+	skill = 4
+
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 5
+}
+
+create_field_marshal = {
+	name = "Anton Denikin"
+		picture = "Anton_Denikin.dds"
+	traits = {  }
+	skill = 5
+	
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 5
+}
+
+create_field_marshal = {
+	name = "Peter Wrangel"
+		picture = "Peter_Wrangel.dds"
+	traits = {  }
+	skill = 4
+	
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+
+
+create_corps_commander = {
+	name = "Grigory Semenov"
+		picture = "Grigory_Semenov.dds"
+	traits = {  }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Peter Krasnov"
+		picture = "Peter_Krasnov.dds"
+	traits = {  }
+	skill = 2
+
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Vasily Boldyrev"
+		picture = "Vasily_Boldyrev.dds"
+	traits = {  }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Andrey Shkuro"
+		picture = "Andrey_Shkuro.dds"
+	traits = {  }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Sergey Markov"
+		picture = "Sergey_Markov.dds"
+	traits = {  }
+	skill = 2
+	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}

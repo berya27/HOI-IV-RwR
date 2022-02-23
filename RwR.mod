@@ -1,0 +1,18 @@
+version="1.10.8"
+tags={
+	"Alternative History"
+	"Ideologies"
+	"Historical"
+	"Graphics"
+	"Gameplay"
+	"Events"
+	"National Focuses"
+	"Military"
+	"Map"
+	"Technologies"
+	"Translation"
+	"Sound"
+}
+name="RwR SevaEdition"
+supported_version="1.10.8"
+path="C:/Users/Lemdefer/Documents/Paradox Interactive/Hearts of Iron IV/mod/RwR"

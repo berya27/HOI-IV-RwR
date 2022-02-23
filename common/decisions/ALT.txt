@@ -1,0 +1,28 @@
+political_actions = {
+
+	ALT_proclamation_of_the_old_believer_empire = {
+
+		allowed = {
+			original_tag = ALT
+		}
+		
+		available = {
+			owns_state = 219
+			owns_state = 195
+		}
+		
+		ai_will_do = {
+			factor = 200
+		}
+		
+		visible = {
+			has_full_control_of_state = 784
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			set_cosmetic_tag = ALT_Russia
+		}
+	}
+}

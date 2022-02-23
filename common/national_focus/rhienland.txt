@@ -1,0 +1,337 @@
+focus_tree = {
+	id = rhienland
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RHI
+		}
+	}
+	default = no
+	focus = {
+		id = conducting_exercises
+		icon = GFX_goal_rhineland
+		cost = 10
+		x = 7
+		y = 0
+
+	}
+	focus = {
+		id = erzberger_plan
+		icon = GFX_goal_generic_improve_relations
+		cost = 10
+		x = 21
+		y = 0
+
+	}
+	focus = {
+		id = new_genrals
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10
+		prerequisite = {
+			focus = conducting_exercises
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = army_motorization
+		icon = GFX_goal_generic_army_motorized
+		cost = 10
+		prerequisite = {
+			focus = new_genrals
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = fortifications_on_border
+		icon = GFX_goal_generic_construct_military
+		cost = 10
+		prerequisite = {
+			focus = army_motorization
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = production_facilities
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = conducting_exercises
+		}
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = professional_army
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10
+		prerequisite = {
+			focus = production_facilities
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = increased_conscription
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		prerequisite = {
+			focus = professional_army
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = artillery_support
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10
+		prerequisite = {
+			focus = fortifications_on_border
+		}
+		prerequisite = {
+			focus = increased_conscription
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = tanks_development
+		icon = GFX_goal_generic_army_tanks
+		cost = 10
+		prerequisite = {
+			focus = fortifications_on_border
+		}
+		prerequisite = {
+			focus = increased_conscription
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = foreign_consultants
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		prerequisite = {
+			focus = increased_conscription
+		}
+		prerequisite = {
+			focus = fortifications_on_border
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = infrastructure_expansion
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		prerequisite = {
+			focus = erzberger_plan
+		}
+		x = 19
+		y = 1
+
+	}
+	focus = {
+		id = military_industry_growth
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = infrastructure_expansion
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = new_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = erzberger_plan
+		}
+		x = 23
+		y = 1
+
+	}
+	focus = {
+		id = new_autobahns
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = new_factories
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = choice_of_economy_minister
+		icon = GFX_goal_generic_national_unity
+		cost = 10
+		prerequisite = {
+			focus = military_industry_growth
+		}
+		prerequisite = {
+			focus = new_autobahns
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = anton_storch
+		icon = GFX_anton_storch
+		cost = 10
+		prerequisite = {
+			focus = choice_of_economy_minister
+		}
+		mutually_exclusive = {
+			focus = heinrich_kohler
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = civil_projects
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = anton_storch
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = roads_for_people
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = anton_storch
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = heinrich_kohler
+		icon = GFX_heinrich_kohler
+		cost = 10
+		prerequisite = {
+			focus = choice_of_economy_minister
+		}
+		mutually_exclusive = {
+			focus = anton_storch
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = contribution_to_military_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = heinrich_kohler
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = capital_air_defenses
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10
+		prerequisite = {
+			focus = contribution_to_military_industry
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = northern_airfield
+		icon = GFX_goal_generic_build_airforce
+		cost = 10
+		prerequisite = {
+			focus = heinrich_kohler
+		}
+		x = 27
+		y = 5
+
+	}
+	focus = {
+		id = defense_line_Rhine
+		icon = GFX_goal_generic_construct_military
+		cost = 10
+		prerequisite = {
+			focus = northern_airfield
+		}
+		x = 27
+		y = 6
+
+	}
+	focus = {
+		id = expansion_of_coal_industry
+		icon = GFX_goal_generic_construction2
+		cost = 10
+		prerequisite = {
+			focus = civil_projects
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = foreign_investments
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		prerequisite = {
+			focus = roads_for_people
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = dialogue_with_France
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		prerequisite = {
+			focus = expansion_of_coal_industry
+		}
+		prerequisite = {
+			focus = foreign_investments
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = negotiations_with_Benelux
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		prerequisite = {
+			focus = capital_air_defenses
+		}
+		prerequisite = {
+			focus = defense_line_Rhine
+		}
+		x = 25
+		y = 7
+
+	}
+}

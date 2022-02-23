@@ -1,0 +1,27 @@
+state={
+	id=812
+	name="STATE_812"
+	manpower = 121800
+	
+	state_category = rural
+	
+	history={
+		victory_points = {
+			3916 3 
+		}
+		victory_points = {
+			6826 1
+		}
+		owner = KUR
+		add_core_of = KUR
+		add_core_of = IRQ
+		
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces={
+		3916 5014 6826 8123 10793 10811
+	}
+}

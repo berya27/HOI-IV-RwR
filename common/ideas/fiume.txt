@@ -1,0 +1,146 @@
+ideas = {
+
+	country = {
+		fiume_state = {
+		
+			removal_cost = -1
+			
+			allowed = {
+			}
+
+			allowed_civil_war = {
+			}
+
+			picture = idea_fiume_state
+			
+			modifier = {
+				conscription = 0.005
+			}
+		}
+	}
+	
+	prime_minister = {
+	
+		danuntsio = {
+			
+			allowed = {
+				original_tag = RHI
+			}
+			available = {
+			}
+			
+			traits = { }
+
+			on_add = {
+				custom_effect_tooltip = conserv_simp
+			}
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+	
+	minister_of_defense = {
+	
+		danuntsio = {
+			
+			allowed = {
+				original_tag = RHI
+			}
+			available = {
+			}
+			
+			traits = { nationalist_symbol army_infantry_3 }
+
+			on_add = {
+				custom_effect_tooltip = autorit_simp
+			}
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+
+	
+	interior_minister = {
+
+		hitler_fiume = {
+
+			
+			allowed = {
+				original_tag = RHI
+			}
+
+			available = {
+			}
+			
+			traits = { }
+
+			on_add = {
+				custom_effect_tooltip = conserv_simp
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	
+	foreign_minister = {
+
+		gavrilo = {
+
+			
+			allowed = {
+				original_tag = RHI
+			}
+
+			available = {
+			}
+			
+			traits = { }
+
+			on_add = {
+				custom_effect_tooltip = conserv_simp
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	
+	minister_of_economy = {
+		
+		toskanini = {
+			
+			allowed = {
+				original_tag = RHI
+			}
+			
+			traits = { }
+
+			on_add = {
+				custom_effect_tooltip = conserv_simp
+			}
+		}
+	}
+	
+	culture_ministry = {
+		
+		johannes_belle = {
+			
+			allowed = {
+				original_tag = RHI
+			}
+
+			on_add = {
+				custom_effect_tooltip = conserv_simp
+			}
+			
+			traits = { silent_workhorse }
+		}
+	}
+}

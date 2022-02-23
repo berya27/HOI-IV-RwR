@@ -1,0 +1,4 @@
+l_russian:
+ mt_consumer_goods_factor:0 "Фабрики, производящие товары народного потребления"
+ mt_consumer_goods_production_efficency:0 "Эффективность фабрик, производящих ТНП"
+ economy_dynamic_modifier:0 "Экономика"

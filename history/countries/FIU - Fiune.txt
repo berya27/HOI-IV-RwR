@@ -1,0 +1,71 @@
+﻿capital = 817
+
+OOB = "FIU_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {
+	ruling_party = paternalism
+	last_election = "1925.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	paternalism = 100
+}
+
+add_ideas = {
+	fiume_state
+}
+
+set_convoys = 5
+
+create_country_leader = {
+	name = "Gabriele d'Anuncio"
+	desc = ""
+	picture = "dAnuncio.dds"
+	expire = "1965.1.1"
+	ideology = paternalautocracy
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Gabriele d'Anuncio"
+	desc = ""
+	picture = "dAnuncio.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Gabriele d'Anuncio"
+	desc = ""
+	picture = "dAnuncio.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Gabriele d'Anuncio"
+	portrait_path = "dAnuncio.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 5
+    defense_skill = 5
+    planning_skill = 5
+    logistics_skill = 5
+}
+

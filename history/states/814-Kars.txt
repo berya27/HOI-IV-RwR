@@ -1,0 +1,25 @@
+state={
+	id=814
+	name="STATE_814"
+	manpower = 386120
+	
+	state_category = rural
+	
+	history={
+		victory_points = {
+			10472 5
+		}
+		owner = RUS
+		add_core_of = RUS
+		add_core_of = TUR
+		add_core_of = ARM
+		
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces={
+		789 3714 6976 6991 7454 10403 10472 11753 11853
+	}
+}

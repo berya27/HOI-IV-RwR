@@ -1,0 +1,1050 @@
+focus_tree = {
+	id = germany
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	default = no
+	focus = {
+		id = improving_military_schools
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 8
+		y = 0
+
+	}
+	focus = {
+		id = absolute_collapse
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 22
+		y = 0
+
+	}
+	focus = {
+		id = foreign_policy_of_state
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 57
+		y = 0
+
+	}
+	focus = {
+		id = german_sky
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 77
+		y = 0
+
+	}
+	focus = {
+		id = improving_discipline
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = improving_military_schools
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = new_tactics_of_war
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = improving_discipline
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = {
+		id = approval_of_reorganization_of_army
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = improving_discipline
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = focus_on_great_powers
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = approval_of_reorganization_of_army
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = purchase_of_weapons
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = focus_on_great_powers
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = foreign_specialists
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = focus_on_great_powers
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = joint_exercises
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = purchase_of_weapons
+		}
+		prerequisite = {
+			focus = foreign_specialists
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = modern_army
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = joint_exercises
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = Berlin_by_itself
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = approval_of_reorganization_of_army
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = need_reduce_cost_weapons
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = Berlin_by_itself
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = secret_increase_of_army
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = need_reduce_cost_weapons
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = innovations_in_armament
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = need_reduce_cost_weapons
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = lets_stand_for_our_land
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = secret_increase_of_army
+		}
+		prerequisite = {
+			focus = innovations_in_armament
+		}
+		x = 12
+		y = 6
+
+	}
+	focus = {
+		id = military_projects_of_country
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = modern_army
+		}
+		prerequisite = {
+			focus = lets_stand_for_our_land
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = rhine_fortifications
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = military_projects_of_country
+		}
+		x = 8
+		y = 8
+
+	}
+	focus = {
+		id = prussian_fortress
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = military_projects_of_country
+		}
+		x = 12
+		y = 8
+
+	}
+	focus = {
+		id = emergency_police_mobilization
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = absolute_collapse
+		}
+		x = 22
+		y = 1
+
+	}
+	focus = {
+		id = countrys_reconstruction_plan
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = improving_discipline
+		}
+		prerequisite = {
+			focus = emergency_police_mobilization
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = request_for_reduction_of_reparations
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = countrys_reconstruction_plan
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = lower_bread_prices
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = countrys_reconstruction_plan
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = rescue_of_bankrupts
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = countrys_reconstruction_plan
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = listen_to_unions
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = lower_bread_prices
+		}
+		prerequisite = {
+			focus = request_for_reduction_of_reparations
+		}
+		prerequisite = {
+			focus = rescue_of_bankrupts
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = cooperation_with_peasantry
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = listen_to_unions
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = assistance_enterprises
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = listen_to_unions
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = fate_of_unprofitable_factories
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = assistance_enterprises
+		}
+		x = 20
+		y = 6
+
+	}
+	focus = {
+		id = cooperation_with_village
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = cooperation_with_peasantry
+		}
+		x = 17
+		y = 6
+
+	}
+	focus = {
+		id = introduction_state_control
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = listen_to_unions
+		}
+		x = 24
+		y = 5
+
+	}
+	focus = {
+		id = expanding_influence_of_state
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = introduction_state_control
+		}
+		x = 24
+		y = 6
+
+	}
+	focus = {
+		id = support_for_unemployed
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = listen_to_unions
+		}
+		x = 27
+		y = 5
+
+	}
+	focus = {
+		id = organization_of_budget_jobs
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = support_for_unemployed
+		}
+		x = 27
+		y = 6
+
+	}
+	focus = {
+		id = territorium_der_freiheit
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = expanding_influence_of_state
+		}
+		prerequisite = {
+			focus = fate_of_unprofitable_factories
+		}
+		prerequisite = {
+			focus = cooperation_with_village
+		}
+		prerequisite = {
+			focus = organization_of_budget_jobs
+		}
+		x = 22
+		y = 7
+
+	}
+	focus = {
+		id = export_expansion
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = territorium_der_freiheit
+		}
+		x = 18
+		y = 8
+
+	}
+	focus = {
+		id = subsidies_to_industry
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = territorium_der_freiheit
+		}
+		x = 24
+		y = 8
+
+	}
+	focus = {
+		id = increasing_role_of_entrepreneurs
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = territorium_der_freiheit
+		}
+		x = 26
+		y = 8
+
+	}
+	focus = {
+		id = end_of_political_drift
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = emergency_police_mobilization
+		}
+		x = 38
+		y = 2
+
+	}
+	focus = {
+		id = democracy_must_be_strong
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = end_of_political_drift
+		}
+		mutually_exclusive = {
+			focus = turning_to_radicals
+		}
+		x = 35
+		y = 3
+
+	}
+	focus = {
+		id = expel_corrupt_officials
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = democracy_must_be_strong
+		}
+		x = 33
+		y = 4
+
+	}
+	focus = {
+		id = weaken_enemies_democracy
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = democracy_must_be_strong
+		}
+		x = 37
+		y = 4
+
+	}
+	focus = {
+		id = propaganda_mouthpiece
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = expel_corrupt_officials
+		}
+		prerequisite = {
+			focus = weaken_enemies_democracy
+		}
+		x = 35
+		y = 5
+
+	}
+	focus = {
+		id = stable_government
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = propaganda_mouthpiece
+		}
+		x = 35
+		y = 6
+
+	}
+	focus = {
+		id = turning_to_radicals
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = end_of_political_drift
+		}
+		mutually_exclusive = {
+			focus = democracy_must_be_strong
+		}
+		x = 41
+		y = 3
+
+	}
+	focus = {
+		id = participation_of_trade_unions_in_struggle
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = turning_to_radicals
+		}
+		x = 41
+		y = 4
+
+	}
+	focus = {
+		id = strengthen_party_formations
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = participation_of_trade_unions_in_struggle
+		}
+		x = 41
+		y = 5
+
+	}
+	focus = {
+		id = call_for_reelection
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = strengthen_party_formations
+		}
+		mutually_exclusive = {
+			focus = down_with_French_henchmen
+		}
+		x = 40
+		y = 6
+
+	}
+	focus = {
+		id = down_with_French_henchmen
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = strengthen_party_formations
+		}
+		mutually_exclusive = {
+			focus = call_for_reelection
+		}
+		x = 42
+		y = 6
+
+	}
+	focus = {
+		id = consequences_of_rhineland_rebellion
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = foreign_policy_of_state
+		}
+		x = 50
+		y = 1
+
+	}
+	focus = {
+		id = assistance_to_refugees
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = consequences_of_rhineland_rebellion
+		}
+		x = 48
+		y = 2
+
+	}
+	focus = {
+		id = save_the_persecuted
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = consequences_of_rhineland_rebellion
+		}
+		x = 52
+		y = 2
+
+	}
+	focus = {
+		id = termination_of_trade_with_France
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = assistance_to_refugees
+		}
+		prerequisite = {
+			focus = save_the_persecuted
+		}
+		x = 50
+		y = 3
+
+	}
+	focus = {
+		id = its_time_to_return_the_lost
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = termination_of_trade_with_France
+		}
+		x = 50
+		y = 4
+
+	}
+	focus = {
+		id = turn_your_eyes_to_danube
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = foreign_policy_of_state
+		}
+		x = 57
+		y = 1
+
+	}
+	focus = {
+		id = friendship_with_austria
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = turn_your_eyes_to_danube
+		}
+		x = 55
+		y = 2
+
+	}
+	focus = {
+		id = friendship_with_hungary
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = friendship_with_austria
+		}
+		x = 55
+		y = 3
+
+	}
+	focus = {
+		id = development_of_economic_ties
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = turn_your_eyes_to_danube
+		}
+		x = 59
+		y = 2
+
+	}
+	focus = {
+		id = interaction_in_agriculture
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = development_of_economic_ties
+		}
+		x = 59
+		y = 3
+
+	}
+	focus = {
+		id = danube_economic_zone
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = friendship_with_hungary
+		}
+		prerequisite = {
+			focus = interaction_in_agriculture
+		}
+		x = 57
+		y = 4
+
+	}
+	focus = {
+		id = updating_prices_within_the_zone
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = danube_economic_zone
+		}
+		x = 54
+		y = 5
+
+	}
+	focus = {
+		id = industrial_support1
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = danube_economic_zone
+		}
+		x = 60
+		y = 5
+
+	}
+	focus = {
+		id = reassure_bavaria
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = foreign_policy_of_state
+		}
+		x = 64
+		y = 1
+
+	}
+	focus = {
+		id = search_for_loyal_politicians
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = reassure_bavaria
+		}
+		x = 62
+		y = 2
+
+	}
+	focus = {
+		id = cooperation_with_farmers
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = reassure_bavaria
+		}
+		x = 66
+		y = 2
+
+	}
+	focus = {
+		id = united_again
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = search_for_loyal_politicians
+		}
+		prerequisite = {
+			focus = cooperation_with_farmers
+		}
+		x = 64
+		y = 3
+
+	}
+	focus = {
+		id = wont_allow_new_separatism
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = united_again
+		}
+		x = 64
+		y = 4
+
+	}
+	focus = {
+		id = bypassing_agreements
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = german_sky
+		}
+		mutually_exclusive = {
+			focus = alternative_to_aviation
+		}
+		x = 73
+		y = 1
+
+	}
+	focus = {
+		id = new_airports
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = bypassing_agreements
+		}
+		x = 71
+		y = 2
+
+	}
+	focus = {
+		id = flight_schools
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = bypassing_agreements
+		}
+		x = 75
+		y = 2
+
+	}
+	focus = {
+		id = aviation_plants
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = new_airports
+		}
+		prerequisite = {
+			focus = flight_schools
+		}
+		x = 73
+		y = 3
+
+	}
+	focus = {
+		id = choice_of_fighters
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = aviation_plants
+		}
+		mutually_exclusive = {
+			focus = choice_of_bombers
+			focus = choice_of_attack_aircraft
+		}
+		x = 71
+		y = 4
+
+	}
+	focus = {
+		id = choice_of_attack_aircraft
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = aviation_plants
+		}
+		mutually_exclusive = {
+			focus = choice_of_bombers
+			focus = choice_of_fighters
+		}
+		x = 73
+		y = 4
+
+	}
+	focus = {
+		id = choice_of_bombers
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = aviation_plants
+		}
+		mutually_exclusive = {
+			focus = choice_of_attack_aircraft
+			focus = choice_of_fighters
+		}
+		x = 75
+		y = 4
+
+	}
+	focus = {
+		id = alternative_to_aviation
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = german_sky
+		}
+		mutually_exclusive = {
+			focus = bypassing_agreements
+		}
+		x = 81
+		y = 1
+
+	}
+	focus = {
+		id = development_of_air_defense
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = alternative_to_aviation
+		}
+		x = 79
+		y = 2
+
+	}
+	focus = {
+		id = cheaper_structures
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = development_of_air_defense
+		}
+		x = 79
+		y = 3
+
+	}
+	focus = {
+		id = development_of_tank_building
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = military_projects_of_country
+		}
+		x = 10
+		y = 8
+
+	}
+	focus = {
+		id = rhineland_line
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = rhine_fortifications
+		}
+		mutually_exclusive = {
+			focus = aviation_following_example_of_Paris
+		}
+		x = 8
+		y = 9
+
+	}
+	focus = {
+		id = aviation_following_example_of_Paris
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = development_of_tank_building
+		}
+		mutually_exclusive = {
+			focus = rhineland_line
+			focus = silesian_shaft
+		}
+		x = 10
+		y = 9
+
+	}
+	focus = {
+		id = silesian_shaft
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = prussian_fortress
+		}
+		mutually_exclusive = {
+			focus = aviation_following_example_of_Paris
+		}
+		x = 12
+		y = 9
+
+	}
+	focus = {
+		id = reduction_of_duties
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = territorium_der_freiheit
+		}
+		x = 20
+		y = 8
+
+	}
+	focus = {
+		id = support_for_new_companies
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = territorium_der_freiheit
+		}
+		x = 22
+		y = 8
+
+	}
+	focus = {
+		id = worst _is_probably_over
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = export_expansion
+		}
+		prerequisite = {
+			focus = reduction_of_duties
+		}
+		prerequisite = {
+			focus = support_for_new_companies
+		}
+		prerequisite = {
+			focus = subsidies_to_industry
+		}
+		prerequisite = {
+			focus = increasing_role_of_entrepreneurs
+		}
+		x = 22
+		y = 9
+
+	}
+	focus = {
+		id = exchange_of_scientific_data
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = danube_economic_zone
+		}
+		x = 57
+		y = 5
+
+	}
+	focus = {
+		id = creation_of_new_artillery
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = alternative_to_aviation
+		}
+		x = 83
+		y = 2
+
+	}
+	focus = {
+		id = advanced_air_defense_artillery
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = creation_of_new_artillery
+		}
+		x = 83
+		y = 3
+
+	}
+}

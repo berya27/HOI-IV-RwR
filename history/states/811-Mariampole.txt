@@ -1,0 +1,21 @@
+state={
+	id=811
+	name="STATE_811"
+	manpower = 21800
+	
+	state_category = rural
+	
+	history={
+		owner = POL
+		add_core_of = POL
+		add_core_of = LIT
+		
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces={
+		3272 6281 6407 11312
+	}
+}

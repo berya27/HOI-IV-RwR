@@ -1,0 +1,199 @@
+﻿l_russian:
+ 
+ democratic:0 "Консерватизм"
+ democratic_noun:0 "Консерватизм"
+ democratic_desc:0 "Демократический режим"
+ conservatism:0 "Консерватизм"
+ conservatism_desc:0 "Консерваторы считают, что быстрые изменения идут только во вред обществу; они поддерживают традиционные ценности и выступают за умеренные реформы, иногда ратуя за возврат к старым добрым временам."
+ national_conservatism:0 "Национал-консерватизм"
+ national_conservatism_desc:0 "Национал-консерватизм — политический термин, используемый для описания разновидности консерватизма, концентрирующегося в большей степени на национальных интересах и, как правило, имеющего традиционные социальные и этические взгляды."
+ 
+ 
+ liberalism:0 "Либерализм"
+ liberalism_noun:0 "Либерализм"
+ liberalism_desc:0 "Демократическй режим"
+ libetrade:0 "Либерализм" 
+ libetrade_desc:0 "Либерализм, основанный на давней философской традиции уважения личной свободы, считает защиту прав человека основной функцией государства."
+ 
+ 
+ socdem:0 "Социал-демократия"
+ socdem_noun:0 "Социал-демократия"
+ socdem_desc:0 "Демократическй режим"
+ socdemocrat:0 "Социал-демократия" 
+ socdemocrat_desc:0 "Социал-демократы проповедуют социальное равенство, добиваться которого призывают посредством реформ; по их мнению, общество должно ограничивать крайние проявления капитализма."
+ 
+ 
+ libsoc:0 "Либертарн. социализм"
+ libsoc_noun:0 "Либертарный социализм"
+ libsoc_desc:0 "Либертарный режим"
+ liberal_socialism:0 "Либеральный социализм" 
+ liberal_socialism_desc:0 "Либеральный социализм."
+ 
+ 
+ marxism:0 "Марксизм"
+ marxism_noun:0 "Марксизм"
+ marxism_desc:0 "Тоталитарный режим"
+ marxist:0 "Марксизм"
+ marxist_desc:0 "Марксизм охватывает широкий спектр экономических и исторических воззрений. Политики-марксисты пытаются использовать идеи Маркса в социальной практике. Общее для всех марксистских идеологий - признание классовой борьбы и необходимости перехода к общественной собственности."
+  
+  
+ communism:0 "Авт. социализм"
+ communism_noun:0 "Авт. социализм"
+ communism_desc:0 "Тоталитарный режим"
+ leninism:0 "Ленинизм"
+ leninism_desc:0 "Ленинизм - это основанная на марксизме идеология, основными постулатами которой являются построение социалистического государства под предводительством передовой партии и мировая революция с целью свержения капиталистического общества. В самой партии до принятия окончательных решений возможны борьба мнений и споры."
+ 
+ 
+ fascism:0 "Рад. национализм"
+ fascism_noun:0 "Радикальный национализм"
+ fascism_desc:0 "Тоталитарный режим"
+ fascism_ideology:0 "Фашизм"
+ fascism_ideology_desc:0 "Фашизм, охватывающий разнообразные ультранационалистические движения, обычно превозносит преданность государству и стремится объединить нацию под руководством сильного лидера."
+ nazism:0 "Нацизм"
+ nazism_desc:0 "Корни нацизма - крайний национализм и идеи о превосходстве немецкой нации. Нацисты призывают к агрессивному расширению границ и к построению тоталитарного государства, все граждане которого объединены под руководством фюрера - лидера с абсолютной властью."
+  
+ 
+ strasserism:0 "Штрассеризм"
+ strasserism_noun:0 "Штрассеризм"
+ strasserism_desc:0 "Тоталитарный режим"
+ strasserist:0 "Штрассеризм"
+ strasserist_desc:0 "Корни нацизма - крайний национализм и идеи о превосходстве немецкой нации. Нацисты призывают к агрессивному расширению границ и к построению тоталитарного государства, все граждане которого объединены под руководством фюрера - лидера с абсолютной властью."
+
+ 
+ neutrality:0 "Авторитаризм"
+ neutrality_noun:0 "Авторитаризм"
+ neutrality_desc:0 "Авторитарный режим"
+ despotism:0 "Деспотизм"
+ despotism_desc:0 "Деспотизм - форма правления, при которой вся абсолютная власть принадлежит одному человеку."
+
+ 
+ paternalism:0 "Патернализм"
+ paternalism_noun:0 "Патернализм"
+ paternalism_desc:0 "Тоталитарный режим"
+ paternalautocracy:0 "Патернализм"
+ paternalautocracy_desc:0 "Патернализм — система отношений, при которой власти обеспечивают базовые потребности граждан, а граждане в обмен на это позволяют властям диктовать модели своего поведения, как публичного, так и частного характера."
+ 
+ 
+ 
+ 
+ 
+ GER_democratic_party:1 "Партия Центра"
+ GER_liberalism_party:1 "ГДП"
+ GER_liberalism_party_long:0 "Германская Демократическая Партия"
+ GER_socdem_party:1 "СДПГ"
+ GER_socdem_party_long:0 "Социал-демократическая Партия Германии"
+ GER_libsoc_party:1 "Профсоюзный Синдикат"
+ GER_marxism_party:0 "СРПГ"
+ GER_marxism_party_long:0 "Социалистическая Рабочая Партия Германии"
+ GER_communism_party:0 "КПГ"
+ GER_communism_party_long:0 "Коммунистическая Партия Германии"
+ GER_fascism_party:0 "НПГ"
+ GER_fascism_party_long:0 "Национальная Партия Германии"
+ GER_strasserism_party:0 "НСПГ"
+ GER_strasserism_party_long:0 "Национальная Социалистическая Партия Германии"
+ GER_neutrality_party:0 "НННП"
+ GER_neutrality_party_long:0 "Немецкая Национальная Пародная Партия"
+ 
+ 
+ 
+ RUS_democratic_party:1 "Союз 17-го Октября"
+ RUS_liberalism_party:1 "Кадеты"
+ RUS_liberalism_party_long:0 "Конституционно-Демократическая Партия"
+ RUS_socdem_party:1 "ПСР"
+ RUS_socdem_party_long:0 "Партия Социалистов-Революционеров"
+ RUS_marxism_party:0 "РСДРП(М)"
+ RUS_marxism_party_long:0 "Российская Социал-Демократическая Рабочая Партия (Мартовцы)"
+ RUS_communism_party:0 "РСДРП(З)"
+ RUS_communism_party_long:0 "Российская Социал-Демократическая Рабочая Партия (Зиновьевцы)"
+ RUS_fascism_party:0 "СНРПР"
+ RUS_fascism_party_long:0 "Социлал-Националистическая Рабочая Партия России"
+ RUS_strasserism_party:0 "РГРП"
+ RUS_strasserism_party_long:0 "Русско-Германская Революционная Партия"
+ RUS_neutrality_party:0 "Союз Русского Народа"
+ 
+ 
+ 
+ ENG_democratic_party:1 "Консервативная Партия"
+ ENG_liberalism_party:1 "Либеральная Партия"
+ ENG_liberalism_party_long:0 "Либеральная Партия Великобритании"
+ ENG_socdem_party:1 "Лейбористская Партия"
+ ENG_libsoc_party:1 "Единая Профсоюзная Партия"
+ ENG_marxism_party:0 "Партия Британского Пролетариата"
+ ENG_communism_party:0 "КПБ"
+ ENG_communism_party_long:0 "Коммунистическая Партия Британии"
+ ENG_fascism_party:0 "БСФ"
+ ENG_fascism_party_long:0 "Британский Союз Фашистов"
+ ENG_strasserism_party:0 "ННЕБП"
+ ENG_strasserism_party_long:0 "Национальная Народная Единая Британская Партия"
+ ENG_neutrality_party:0 "Монархический Союз"
+ 
+ 
+ 
+ AUS_democratic_party:1 "Христианско-Социальная Партия"
+ AUS_liberalism_party:1 "Национальный союз"
+ AUS_socdem_party:1 "SPÖ"
+ AUS_socdem_party_long:0 "Социал-Демократическая Партия Австрии"
+ AUS_marxism_party:0 "UÖM"
+ AUS_marxism_party_long:0 "Союз Австрийских Марксистов"
+ AUS_communism_party:0 "Коммунистическая Партия Австрии"
+ AUS_fascism_party:0 "Отечественный фронт"
+ AUS_strasserism_party:0 "НСДАП"
+ AUS_strasserism_party_long:0 "Немецкая Национал-Социалистическая Рабочая Партия"
+ AUS_neutrality_party:0 "Хейматблок"
+ 
+ 
+ 
+ HUN_democratic_party:1 "Христианская Национальная Партия"
+ HUN_liberalism_party:1 "ПН48"
+ HUN_liberalism_party_long:0 "Партия Независимости и 48-го года"
+ HUN_socdem_party:1 "MSZDP"
+ HUN_socdem_party_long:0 "Социал-демократическая партия Венгрии"
+ HUN_marxism_party:0 "MDP"
+ HUN_marxism_party_long:0 "Венгерская Рабочая Народная Партия"
+ HUN_communism_party:0 "Венгерская Коммунистическая Партия"
+ HUN_fascism_party:0 "ПСС"
+ HUN_fascism_party_long:0 "Партия Скрещённых Стрел"
+ HUN_strasserism_party:0 "KNSF"
+ HUN_strasserism_party_long:0 "Христианский Национал-Социалистический Фронт"
+ HUN_neutrality_party:0 "Партия Нового Кошута"
+ HUN_neutrality_party_long:0 "Партия Нового Кошута - Миклоша Хорти"
+ 
+ 
+ 
+ CZE_democratic_party:1 "ЧНСП"
+ CZE_democratic_party_long:0 "Чешская Национально-Социальная Партия"
+ CZE_liberalism_party:1 "НДП"
+ CZE_liberalism_party_long:0 "Национал-Демократическая Партия"
+ CZE_socdem_party:1 "ЧСДП"
+ CZE_socdem_party_long:0 "Чешская Социал-Демократическая Партия"
+ CZE_marxism_party:0 "НПБМ"
+ CZE_marxism_party_long:0 "Народная Партия Богемии и Моравии"
+ CZE_communism_party:0 "КПЧ"
+ CZE_communism_party_long:0 "Коммунистическая Партия Чехии"
+ CZE_fascism_party:0 "NFS"
+ CZE_fascism_party_long:0 "Национальное Фашистское Общество"
+ CZE_strasserism_party:0 "STJ"
+ CZE_strasserism_party_long:0 "Партия Свободного Народа"
+ CZE_neutrality_party:0 "STJ"
+ CZE_neutrality_party_long:0 "Партия Национального Единства"
+ 
+ 
+ 
+ USA_democratic_party:1 "Республиканская Партия"
+ USA_liberalism_party:1 "Демократическая Партия"
+ USA_socdem_party:1 "Трудовая Партия"
+ USA_socdem_party_long:0 "Трудовая Партия Соединенных Штатов Америки"
+ USA_marxism_party:0 "СПСША"
+ USA_marxism_party_long:0 "Социалистическая партия США"
+ USA_communism_party:0 "Коммунистическая партия США"
+ USA_fascism_party:0 "AFP"
+ USA_fascism_party_long:0 "Америка Превыше Всего"
+ USA_strasserism_party:0 "NSAFP"
+ USA_strasserism_party_long:0 "Национал-Синдикалистская Американская Фалангистская Партия"
+ USA_neutrality_party:0 "Конституционная партия"
+ 
+ 
+ 
+ ALT_fascism_party:0 "Русские Старообрядцы"
+ ALT_neutrality_party:0 "Русские Старообрядцы"
+ ALT_paternalism_party:0 "Русские Старообрядцы"

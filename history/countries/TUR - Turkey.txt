@@ -1,0 +1,84 @@
+﻿capital = 49
+
+oob = "TUR_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	naval_bomber1 = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	transport = 1
+	basic_naval_mines = 1
+	submarine_mine_laying = 1
+	early_ship_hull_light = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	basic_battery = 1
+	basic_secondary_battery = 1
+	basic_torpedo = 1
+	coastal_defense_ships = 1
+	mtg_transport = 1
+}
+
+add_ideas = {
+	TUR_antisemitism
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1920.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 100
+}
+
+create_country_leader = {
+	name = "Amin Al-Husseini"
+	desc = ""
+	picture = "Amin_Al_Husseini.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mustafa Kemal Atatürk"
+	desc = ""
+	picture = "Ataturk.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ismail Enver"
+	desc = ""
+	picture = "Ismail_Enver.dds"
+	expire = "1965.1.1"
+	ideology = paternalautocracy
+	traits = {
+		#
+	}
+}

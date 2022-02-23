@@ -1,0 +1,20 @@
+﻿###########################
+# Rhienland Events
+###########################
+
+add_namespace = rhienland
+
+# Death of Erzberger
+country_event = {
+	id = rhienland.1
+	title = rhienland.1.t
+	desc = rhienland.1.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	option = {
+		name = rhienland.1.a
+		effect_tooltip = {
+			remove_ideas = matthias_erzberger
+		}
+	}
+}
