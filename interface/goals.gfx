@@ -1,5 +1,75 @@
 spriteTypes = {	
 
+	SpriteType = {
+		name = "GFX_cadets_victory"
+		texturefile = "gfx/interface/goals/cadets_victory.dds"			
+	}	
+
+	SpriteType = {
+		name = "GFX_collection_and_preparation_of_weapons_in_the_party_ranks"
+		texturefile = "gfx/interface/goals/collection_and_preparation_of_weapons_in_the_party_ranks.dds"			
+	}	
+
+	SpriteType = {
+		name = "GFX_conservative_development_plan"
+		texturefile = "gfx/interface/goals/conservative_development_plan.dds"			
+	}	
+
+	SpriteType = {
+		name = "GFX_deafening_great_depression"
+		texturefile = "gfx/interface/goals/deafening_great_depression.dds"			
+	}	
+
+	SpriteType = {
+		name = "GFX_declare_the_establishment_of_a_republic"
+		texturefile = "gfx/interface/goals/declare_the_establishment_of_a_republic.dds"			
+	}	
+
+	SpriteType = {
+		name = "GFX_interference_with_the_opposition_press"
+		texturefile = "gfx/interface/goals/interference_with_the_opposition_press.dds"			
+	}	
+
+	SpriteType = {
+		name = "GFX_june_crisis"
+		texturefile = "gfx/interface/goals/june_crisis.dds"			
+	}	
+
+	SpriteType = {
+		name = "GFX_long_live_new_old_russia"
+		texturefile = "gfx/interface/goals/long_live_new_old_russia.dds"			
+	}	
+
+	SpriteType = {
+		name = "GFX_persistence_of_discord_in_the_duma"
+		texturefile = "gfx/interface/goals/persistence_of_discord_in_the_duma.dds"			
+	}	
+
+	SpriteType = {
+		name = "GFX_sr_victory"
+		texturefile = "gfx/interface/goals/sr_victory.dds"			
+	}	
+
+	SpriteType = {
+		name = "GFX_the_big_day_has_come"
+		texturefile = "gfx/interface/goals/the_big_day_has_come.dds"			
+	}	
+
+	SpriteType = {
+		name = "GFX_the_entry_of_troops_into_petrograd"
+		texturefile = "gfx/interface/goals/the_entry_of_troops_into_petrograd.dds"			
+	}	
+
+	SpriteType = {
+		name = "GFX_use_of_great_russian_marches"
+		texturefile = "gfx/interface/goals/use_of_great_russian_marches.dds"			
+	}	
+
+	SpriteType = {
+		name = "GFX_weakening_of_the_radicals_in_the_duma"
+		texturefile = "gfx/interface/goals/weakening_of_the_radicals_in_the_duma.dds"			
+	}	
+	
 	#### Generic continuous goal icons
 
 	SpriteType = {
