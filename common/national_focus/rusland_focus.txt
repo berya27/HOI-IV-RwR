@@ -1,4 +1,4 @@
-focus_tree = {
+﻿focus_tree = {
 	id = rusland_focus
 	country = {
 		factor = 0
@@ -14,15 +14,21 @@ focus_tree = {
 	focus = {
 		id = RUS_june_crisis
 		icon = GFX_focus_TUR_ratify_the_six_arrows
-		cost = 5,00
+		cost = 5
 		x = 17
 		y = 0
+		
+		completion_reward = {
+			country_event = {
+				id = russia.9
+			}
+		}
 
 	}
 	focus = {
 		id = RUS_new_convocation_in_the_duma
 		icon = GFX_goal_molotov_ribbentrop_pact
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_june_crisis
 		}
@@ -32,11 +38,14 @@ focus_tree = {
 		x = 11
 		y = 1
 
+		completion_reward = {
+			add_political_power = 10
+		}
 	}
 	focus = {
 		id = RUS_cadets_victory
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_new_convocation_in_the_duma
 		}
@@ -48,11 +57,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_new_convocation_in_the_duma
 
+		completion_reward = {
+			country_event = {
+				id = russia.10
+			}
+		}
 	}
 	focus = {
 		id = RUS_sr_victory
 		icon = GFX_goal_support_communism
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_new_convocation_in_the_duma
 		}
@@ -64,11 +78,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_new_convocation_in_the_duma
 
+		completion_reward = {
+			add_stability     = 0.05
+			add_political_power = 25
+		}
 	}
 	focus = {
 		id = RUS_preparations_for_land_reform
 		icon = GFX_focus_cze_german_puppet
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_sr_victory
 		}
@@ -76,11 +94,17 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_sr_victory
 
+		completion_reward = {
+			add_political_power = 25
+			add_stability     = 0.05
+		
+			add_popularity = { ideology = socdem popularity = 0.02 }
+		}
 	}
 	focus = {
 		id = RUS_broad_left_coalition
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_preparations_for_land_reform
 		}
@@ -88,11 +112,31 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_preparations_for_land_reform
 
+		completion_reward = {
+			custom_effect_tooltip = RUS_broad_left_coalition_tt
+			hidden_effect = {
+				set_temp_variable = { temp1 = 0 }
+				set_temp_variable = { temp2 = 0 }
+				
+				set_temp_variable = { temp3 = party_popularity@marxism   }
+				set_temp_variable = { temp4 = party_popularity@communism }
+				
+				set_temp_variable = { temp5 = temp3 }
+				add_to_temp_variable   = { temp5 = temp4 }
+				
+				subtract_from_temp_variable = { temp1 = temp3 }
+				subtract_from_temp_variable = { temp2 = temp4 }
+				
+				add_popularity = { ideology = socdem    popularity = temp5 }
+				add_popularity = { ideology = marxism   popularity = temp3 }
+				add_popularity = { ideology = communism popularity = temp4 }
+			}
+		}
 	}
 	focus = {
 		id = RUS_independent_policy_of_the_sr
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_preparations_for_land_reform
 		}
@@ -100,11 +144,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_preparations_for_land_reform
 
+		completion_reward = {
+			add_political_power = 10
+		
+			add_popularity = { ideology = socdem popularity = 0.02 }
+		}
 	}
 	focus = {
 		id = RUS_deafening_great_depression
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_independent_policy_of_the_sr
 		}
@@ -115,11 +164,16 @@ focus_tree = {
 		y = 2
 		relative_position_id = RUS_preparations_for_land_reform
 
+		completion_reward = {
+			country_event = {
+				id = russia.4
+			}
+		}
 	}
 	focus = {
 		id = RUS_trying_to_stop_the_fall
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_deafening_great_depression
 		}
@@ -127,11 +181,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_deafening_great_depression
 
+		completion_reward = {
+			add_stability     = 0.05
+			add_political_power = 10
+		}
 	}
 	focus = {
 		id = RUS_maintain_stability_among_the_peasantry
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_trying_to_stop_the_fall
 		}
@@ -142,11 +200,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_trying_to_stop_the_fall
 
+		completion_reward = {
+			add_stability     = 0.05
+			add_ideas = RUS_maintain_stability_among_the_peasantry_idea
+		}
 	}
 	focus = {
 		id = RUS_fixed_prices_for_products
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_trying_to_stop_the_fall
 		}
@@ -154,11 +216,19 @@ focus_tree = {
 		y = 2
 		relative_position_id = RUS_trying_to_stop_the_fall
 
+		completion_reward = {
+			add_political_power = 25
+			
+			add_timed_idea = {
+				idea = RUS_fixed_prices_for_products_idea
+				days = 120
+			}
+		}
 	}
 	focus = {
 		id = RUS_radicalization_of_peasant_associations
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_trying_to_stop_the_fall
 		}
@@ -169,11 +239,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_trying_to_stop_the_fall
 
+		completion_reward = {
+			add_stability   = -0.05
+			add_war_support = -0.05
+		}
 	}
 	focus = {
 		id = RUS_expel_the_radicals_from_the_party
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_maintain_stability_among_the_peasantry
 		}
@@ -181,11 +255,16 @@ focus_tree = {
 		y = 2
 		relative_position_id = RUS_maintain_stability_among_the_peasantry
 
+		completion_reward = {
+			add_political_power = -50
+		
+			add_popularity = { ideology = socdem popularity = 0.03 }
+		}
 	}
 	focus = {
 		id = RUS_social_support_for_the_unemployed
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_fixed_prices_for_products
 		}
@@ -193,11 +272,21 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_fixed_prices_for_products
 
+		completion_reward = {
+			add_political_power = 25
+		
+			add_popularity = { ideology = socdem popularity = 0.02 }
+			
+			add_timed_idea = {
+				idea = RUS_social_support_for_the_unemployed_idea
+				days = 210
+			}
+		}
 	}
 	focus = {
 		id = RUS_collection_and_preparation_of_weapons_in_the_party_ranks
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_radicalization_of_peasant_associations
 		}
@@ -205,11 +294,21 @@ focus_tree = {
 		y = 2
 		relative_position_id = RUS_radicalization_of_peasant_associations
 
+		completion_reward = {
+			add_stability = -0.05
+			
+			add_popularity = { ideology = socdem popularity = -0.03 }
+			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 600
+			}
+		}
 	}
 	focus = {
 		id = RUS_further_reforms
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_expel_the_radicals_from_the_party
 		}
@@ -220,11 +319,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_social_support_for_the_unemployed
 
+		completion_reward = {
+			country_event = {
+				id = russia.1
+			}
+		}
 	}
 	focus = {
 		id = RUS_the_big_day_has_come
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_collection_and_preparation_of_weapons_in_the_party_ranks
 		}
@@ -235,11 +339,20 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_social_support_for_the_unemployed
 
+		completion_reward = {
+			country_event = {
+				id = russia.2
+			}
+			country_event = {
+				id = russia.3
+				hours = 1
+			}
+		}
 	}
 	focus = {
 		id = RUS_persistence_of_discord_in_the_duma
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_new_convocation_in_the_duma
 		}
@@ -251,11 +364,14 @@ focus_tree = {
 		y = 2
 		relative_position_id = RUS_new_convocation_in_the_duma
 
+		completion_reward = {
+			add_political_power = 10
+		}
 	}
 	focus = {
 		id = RUS_pacify_the_left_bloc
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_persistence_of_discord_in_the_duma
 		}
@@ -263,11 +379,18 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_persistence_of_discord_in_the_duma
 
+		completion_reward = {
+			add_stability = -0.05
+			
+			add_popularity = { ideology = socdem    popularity = -0.02 }
+			add_popularity = { ideology = marxism   popularity = -0.02 }
+			add_popularity = { ideology = communism popularity = -0.02 }
+		}
 	}
 	focus = {
 		id = RUS_searching_for_a_compromise_with_the_cadets
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_persistence_of_discord_in_the_duma
 		}
@@ -275,11 +398,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_persistence_of_discord_in_the_duma
 
+		completion_reward = {
+			country_event = {
+				id = russia.5
+			}
+		}
 	}
 	focus = {
 		id = RUS_conservative_development_plan
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_pacify_the_left_bloc
 		}
@@ -290,11 +418,15 @@ focus_tree = {
 		y = 2
 		relative_position_id = RUS_persistence_of_discord_in_the_duma
 
+		completion_reward = {
+			add_political_power = 25
+			add_stability     = 0.05
+		}
 	}
 	focus = {
 		id = RUS_thunder_passed_over_russia
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_conservative_development_plan
 		}
@@ -302,11 +434,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_conservative_development_plan
 
+		completion_reward = {
+			country_event = {
+				id = russia.4
+			}
+		}
 	}
 	focus = {
 		id = RUS_a_blow_to_peasant_associations
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_thunder_passed_over_russia
 		}
@@ -314,11 +451,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_thunder_passed_over_russia
 
+		completion_reward = {
+			add_stability = -0.05
+			add_political_power = -25
+			add_popularity = { ideology = socdem popularity = -0.04 }
+		}
 	}
 	focus = {
 		id = RUS_Help_from_the_great_russians
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_thunder_passed_over_russia
 		}
@@ -326,11 +468,18 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_thunder_passed_over_russia
 
+		completion_reward = {
+			add_stability = -0.02
+			add_popularity = { ideology = fascism    popularity =  0.02 }
+			
+			add_popularity = { ideology = liberalism popularity = -0.02 }
+			add_popularity = { ideology = socdem     popularity = -0.02 }
+		}
 	}
 	focus = {
-		id = RUS_Interference_with_the_opposition_press
+		id = RUS_interference_with_the_opposition_press
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_thunder_passed_over_russia
 		}
@@ -338,11 +487,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_thunder_passed_over_russia
 
+		completion_reward = {
+			add_popularity = { ideology = ruling_party popularity = 0.05 }
+			add_political_power = -25
+			add_timed_idea = { idea = RUS_interference_with_the_opposition_press_idea days = 90 }
+		}
 	}
 	focus = {
 		id = RUS_everythings_under_control_d
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_a_blow_to_peasant_associations
 		}
@@ -350,17 +504,22 @@ focus_tree = {
 			focus = RUS_Help_from_the_great_russians
 		}
 		prerequisite = {
-			focus = RUS_Interference_with_the_opposition_press
+			focus = RUS_interference_with_the_opposition_press
 		}
 		x = 0
 		y = 1
 		relative_position_id = RUS_Help_from_the_great_russians
 
+		completion_reward = {
+			country_event = {
+				id = russia.7
+			}
+		}
 	}
 	focus = {
 		id = RUS_finalize_the_development_plan
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_everythings_under_control_d
 		}
@@ -368,11 +527,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_everythings_under_control_d
 
+		completion_reward = {
+			country_event = {
+				id = russia.8
+			}
+		}
 	}
 	focus = {
 		id = RUS_weakening_of_the_radicals_in_the_duma
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_cadets_victory
 		}
@@ -380,11 +544,18 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_cadets_victory
 
+		completion_reward = {
+			add_popularity = { ideology = socdem     popularity = -0.02 }
+			add_popularity = { ideology = fascism    popularity = -0.02 }
+			add_popularity = { ideology = democratic popularity = -0.02 }
+			
+			add_stability = 0.05
+		}
 	}
 	focus = {
 		id = RUS_coalition_with_part_of_the_left
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_weakening_of_the_radicals_in_the_duma
 		}
@@ -392,11 +563,24 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_weakening_of_the_radicals_in_the_duma
 
+		completion_reward = {
+			custom_effect_tooltip = RUS_coalition_with_part_of_the_left_tt
+			hidden_effect = {
+				set_temp_variable = { temp1 = 0 }
+				
+				set_temp_variable = { temp2 = party_popularity@marxism   }
+				
+				subtract_from_temp_variable = { temp1 = temp2 }
+				
+				add_popularity = { ideology = liberalism popularity = temp2 }
+				add_popularity = { ideology = marxism    popularity = temp1 }
+			}
+		}
 	}
 	focus = {
 		id = RUS_weaken_rightwing_parties
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_weakening_of_the_radicals_in_the_duma
 		}
@@ -404,11 +588,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_weakening_of_the_radicals_in_the_duma
 
+		completion_reward = {
+			add_popularity = { ideology = fascism    popularity = -0.03 }
+			add_popularity = { ideology = democratic popularity = -0.03 }
+		}
 	}
 	focus = {
 		id = RUS_economic_collapse
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_coalition_with_part_of_the_left
 		}
@@ -419,11 +607,16 @@ focus_tree = {
 		y = 2
 		relative_position_id = RUS_weakening_of_the_radicals_in_the_duma
 
+		completion_reward = {
+			country_event = {
+				id = russia.4
+			}
+		}
 	}
 	focus = {
 		id = RUS_emergency_plan_to_save_the_economy
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_economic_collapse
 		}
@@ -431,11 +624,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_economic_collapse
 
+		completion_reward = {
+			add_stability   = 0.05
+			add_war_support = 0.05
+			add_political_power = 25
+		}
 	}
 	focus = {
 		id = RUS_all_resources_for_stabilization
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_emergency_plan_to_save_the_economy
 		}
@@ -443,11 +641,17 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_emergency_plan_to_save_the_economy
 
+		completion_reward = {
+			add_stability     = 0.05
+			add_political_power = 25
+			
+			add_timed_idea = { idea = RUS_all_resources_for_stabilization_idea days = 120 }
+		}
 	}
 	focus = {
 		id = RUS_demands_for_immediate_reform
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_all_resources_for_stabilization
 		}
@@ -458,11 +662,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_all_resources_for_stabilization
 
+		completion_reward = {
+			add_stability = -0.05
+			add_popularity = { ideology = liberalism popularity = 0.05 }
+		}
 	}
 	focus = {
 		id = RUS_declare_the_establishment_of_a_republic
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_demands_for_immediate_reform
 		}
@@ -470,11 +678,20 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_demands_for_immediate_reform
 
+		completion_reward = {
+			country_event = {
+				id = russia.11
+			}
+			country_event = {
+				id = russia.12
+				hours = 1
+			}
+		}
 	}
 	focus = {
 		id = RUS_limited_reform
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_all_resources_for_stabilization
 		}
@@ -485,11 +702,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_all_resources_for_stabilization
 
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = { ideology = liberalism popularity = 0.05 }
+		}
 	}
 	focus = {
 		id = RUS_collaboration_with_monarchists
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_limited_reform
 		}
@@ -497,12 +718,17 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_limited_reform
 
+		completion_reward = {
+			country_event = {
+				id = russia.13
+			}
+		}
 	}
 	focus = {
 		id = RUS_everythings_under_control
 		text = RUS_everythings_under_control_d
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_june_crisis
 		}
@@ -512,11 +738,15 @@ focus_tree = {
 		x = 23
 		y = 1
 
+		completion_reward = {
+			add_stability     = -0.05
+			add_political_power = -25
+		}
 	}
 	focus = {
 		id = RUS_the_entry_of_troops_into_petrograd
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_everythings_under_control
 		}
@@ -524,11 +754,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_everythings_under_control
 
+		completion_reward = {
+			add_war_support   = -0.05
+			add_stability     = -0.05
+			add_political_power = -25
+		}
 	}
 	focus = {
 		id = RUS_the_weakening_of_the_unions
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_the_entry_of_troops_into_petrograd
 		}
@@ -536,11 +771,18 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_the_entry_of_troops_into_petrograd
 
+		completion_reward = {
+			add_stability = -0.05
+			
+			add_popularity = { ideology = socdem    popularity = -0.05 }
+			add_popularity = { ideology = marxism   popularity = -0.02 }
+			add_popularity = { ideology = communism popularity = -0.02 }
+		}
 	}
 	focus = {
 		id = RUS_reinforce_the_garrisons_of_other_cities
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_the_entry_of_troops_into_petrograd
 		}
@@ -548,11 +790,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_the_entry_of_troops_into_petrograd
 
+		completion_reward = {
+			add_stability = 0.05
+			
+			add_popularity = { ideology = democratic popularity = 0.02 }
+		}
 	}
 	focus = {
 		id = RUS_cooperation_with_the_right_bloc
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_the_entry_of_troops_into_petrograd
 		}
@@ -560,11 +807,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_the_entry_of_troops_into_petrograd
 
+		completion_reward = {
+			add_popularity = { ideology = democratic popularity = 0.02 }
+			add_popularity = { ideology = fascism    popularity = 0.02 }
+		}
 	}
 	focus = {
 		id = RUS_economic_disaster
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_the_weakening_of_the_unions
 		}
@@ -578,11 +829,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_reinforce_the_garrisons_of_other_cities
 
+		completion_reward = {
+			country_event = {
+				id = russia.4
+			}
+		}
 	}
 	focus = {
 		id = RUS_use_of_great_russian_marches
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_economic_disaster
 		}
@@ -590,11 +846,16 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_economic_disaster
 
+		completion_reward = {
+			add_stability = 0.05
+			
+			add_popularity = { ideology = fascism popularity = 0.02 }
+		}
 	}
 	focus = {
 		id = RUS_necessary_violence
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_economic_disaster
 		}
@@ -602,11 +863,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_economic_disaster
 
+		completion_reward = {
+			add_manpower = -75
+			add_political_power = -50
+		}
 	}
 	focus = {
 		id = RUS_stop_the_petrograd_unrest
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_use_of_great_russian_marches
 		}
@@ -617,11 +882,17 @@ focus_tree = {
 		y = 2
 		relative_position_id = RUS_economic_disaster
 
+		completion_reward = {
+			add_stability = 0.05
+			
+			add_popularity = { ideology = socdem     popularity = -0.02 }
+			add_popularity = { ideology = liberalism popularity = -0.02 }
+		}
 	}
 	focus = {
 		id = RUS_death_of_constitutionalism
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_stop_the_petrograd_unrest
 		}
@@ -629,11 +900,17 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_stop_the_petrograd_unrest
 
+		completion_reward = {
+			add_stability   = -0.10
+			add_war_support = -0.10
+			
+			add_popularity = { ideology = fascism popularity = 0.20 }
+		}
 	}
 	focus = {
 		id = RUS_long_live_new_old_russia
 		icon = GFX_goal_unknown
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = RUS_death_of_constitutionalism
 		}
@@ -641,5 +918,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = RUS_death_of_constitutionalism
 
+		completion_reward = {
+			country_event = {
+				id = russia.14
+			}
+		}
 	}
 }

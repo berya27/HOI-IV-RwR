@@ -1,0 +1,159 @@
+ideas = {
+	country = {
+		RUS_illiteracy = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				research_speed_factor = -0.10
+				stability_factor = 0.05
+				political_power_gain = -0.4
+			}
+		}
+	
+		RUS_weak_industrialization = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				production_speed_buildings_factor = -0.10
+				industrial_capacity_factory = -0.15
+			}
+		}
+	
+		RUS_foreign_capital = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+		}
+	
+		RUS_instability_in_politics = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				stability_factor    = -0.10
+				war_support_factor  = -0.10
+				political_power_gain = -0.2
+			}
+		}
+	
+		RUS_june_crisis_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				stability_factor    = -0.10
+				war_support_factor  = -0.10
+				political_power_gain = -0.2
+				training_time_factor = 0.15
+			}
+		}
+	
+		RUS_great_depression = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				production_speed_buildings_factor = -0.30
+				industrial_capacity_factory = -0.30
+				training_time_factor = 0.10
+				stability_factor    = -0.15
+				training_time_factor = 0.15
+			}
+		}
+	
+		RUS_maintain_stability_among_the_peasantry_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				political_power_factor = 0.05
+			}
+		}
+		
+		RUS_fixed_prices_for_products_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+		}
+		
+		RUS_social_support_for_the_unemployed_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+		}
+		
+		RUS_cadets_demands = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+		}
+		
+		RUS_Interference_with_the_opposition_press_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		RUS_all_resources_for_stabilization_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+		}
+	}
+}

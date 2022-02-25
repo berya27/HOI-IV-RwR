@@ -52,6 +52,13 @@ set_popularities = {
 	paternalism = 1
 }
 
+add_ideas = {
+	RUS_illiteracy
+	RUS_weak_industrialization
+	RUS_foreign_capital
+	RUS_instability_in_politics
+}
+
 create_country_leader = {
 	name = "Mikhail Romanov"
 	desc = "POLITICS_MIKHAIL_ROMANOV_DESC"
