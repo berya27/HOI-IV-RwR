@@ -14,9 +14,12 @@
 	focus = {
 		id = RUS_june_crisis
 		icon = GFX_june_crisis
-		cost = 5
-		x = 17
+		cost = 0.15
+		x = 15
 		y = 0
+		available = {
+			always = no
+		}
 		
 		completion_reward = {
 			country_event = {
@@ -27,7 +30,7 @@
 	}
 	focus = {
 		id = RUS_new_convocation_in_the_duma
-		icon = GFX_goal_molotov_ribbentrop_pact
+		icon = GFX_rus_duma
 		cost = 5
 		prerequisite = {
 			focus = RUS_june_crisis
@@ -35,7 +38,7 @@
 		mutually_exclusive = {
 			focus = RUS_everythings_under_control
 		}
-		x = 11
+		x = 9
 		y = 1
 
 		completion_reward = {
@@ -45,13 +48,19 @@
 	focus = {
 		id = RUS_cadets_victory
 		icon = GFX_cadets_victory
-		cost = 5
+		cost = 0.15
+		available = {
+			always = no
+		}
 		prerequisite = {
 			focus = RUS_new_convocation_in_the_duma
 		}
 		mutually_exclusive = {
 			focus = RUS_persistence_of_discord_in_the_duma
 			focus = RUS_sr_victory
+		}
+		available = {
+			NOT = { has_completed_focus = RUS_sr_victory }
 		}
 		x = 6
 		y = 1
@@ -66,7 +75,10 @@
 	focus = {
 		id = RUS_sr_victory
 		icon = GFX_sr_victory
-		cost = 5
+		cost = 0.15
+		available = {
+			always = no
+		}
 		prerequisite = {
 			focus = RUS_new_convocation_in_the_duma
 		}
@@ -74,7 +86,10 @@
 			focus = RUS_cadets_victory
 			focus = RUS_persistence_of_discord_in_the_duma
 		}
-		x = -7
+		available = {
+			NOT = { has_completed_focus = RUS_cadets_victory }
+		}
+		x = -6
 		y = 1
 		relative_position_id = RUS_new_convocation_in_the_duma
 
@@ -85,7 +100,7 @@
 	}
 	focus = {
 		id = RUS_preparations_for_land_reform
-		icon = GFX_focus_cze_german_puppet
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_sr_victory
@@ -103,7 +118,7 @@
 	}
 	focus = {
 		id = RUS_broad_left_coalition
-		icon = GFX_goal_unknown
+		icon = GFX_rus_friendship
 		cost = 5
 		prerequisite = {
 			focus = RUS_preparations_for_land_reform
@@ -135,7 +150,7 @@
 	}
 	focus = {
 		id = RUS_independent_policy_of_the_sr
-		icon = GFX_goal_unknown
+		icon = GFX_rus_duma
 		cost = 5
 		prerequisite = {
 			focus = RUS_preparations_for_land_reform
@@ -153,7 +168,10 @@
 	focus = {
 		id = RUS_deafening_great_depression
 		icon = GFX_deafening_great_depression
-		cost = 5
+		cost = 0.15
+		available = {
+			always = no
+		}
 		prerequisite = {
 			focus = RUS_independent_policy_of_the_sr
 		}
@@ -172,7 +190,7 @@
 	}
 	focus = {
 		id = RUS_trying_to_stop_the_fall
-		icon = GFX_goal_unknown
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_deafening_great_depression
@@ -188,7 +206,7 @@
 	}
 	focus = {
 		id = RUS_maintain_stability_among_the_peasantry
-		icon = GFX_goal_unknown
+		icon = GFX_rus_friendship
 		cost = 5
 		prerequisite = {
 			focus = RUS_trying_to_stop_the_fall
@@ -207,7 +225,7 @@
 	}
 	focus = {
 		id = RUS_fixed_prices_for_products
-		icon = GFX_goal_unknown
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_trying_to_stop_the_fall
@@ -227,7 +245,7 @@
 	}
 	focus = {
 		id = RUS_radicalization_of_peasant_associations
-		icon = GFX_goal_unknown
+		icon = GFX_rus_friendship
 		cost = 5
 		prerequisite = {
 			focus = RUS_trying_to_stop_the_fall
@@ -246,7 +264,7 @@
 	}
 	focus = {
 		id = RUS_expel_the_radicals_from_the_party
-		icon = GFX_goal_unknown
+		icon = GFX_rus_chains
 		cost = 5
 		prerequisite = {
 			focus = RUS_maintain_stability_among_the_peasantry
@@ -263,7 +281,7 @@
 	}
 	focus = {
 		id = RUS_social_support_for_the_unemployed
-		icon = GFX_goal_unknown
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_fixed_prices_for_products
@@ -307,7 +325,7 @@
 	}
 	focus = {
 		id = RUS_further_reforms
-		icon = GFX_goal_unknown
+		icon = GFX_rus_duma
 		cost = 5
 		prerequisite = {
 			focus = RUS_expel_the_radicals_from_the_party
@@ -352,7 +370,10 @@
 	focus = {
 		id = RUS_persistence_of_discord_in_the_duma
 		icon = GFX_persistence_of_discord_in_the_duma
-		cost = 5
+		cost = 0.15
+		available = {
+			always = no
+		}
 		prerequisite = {
 			focus = RUS_new_convocation_in_the_duma
 		}
@@ -361,7 +382,7 @@
 			focus = RUS_sr_victory
 		}
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = RUS_new_convocation_in_the_duma
 
 		completion_reward = {
@@ -370,7 +391,7 @@
 	}
 	focus = {
 		id = RUS_pacify_the_left_bloc
-		icon = GFX_goal_unknown
+		icon = GFX_rus_chains
 		cost = 5
 		prerequisite = {
 			focus = RUS_persistence_of_discord_in_the_duma
@@ -389,7 +410,7 @@
 	}
 	focus = {
 		id = RUS_searching_for_a_compromise_with_the_cadets
-		icon = GFX_goal_unknown
+		icon = GFX_rus_friendship
 		cost = 5
 		prerequisite = {
 			focus = RUS_persistence_of_discord_in_the_duma
@@ -426,7 +447,10 @@
 	focus = {
 		id = RUS_thunder_passed_over_russia
 		icon = GFX_deafening_great_depression
-		cost = 5
+		cost = 0.15
+		available = {
+			always = no
+		}
 		prerequisite = {
 			focus = RUS_conservative_development_plan
 		}
@@ -442,7 +466,7 @@
 	}
 	focus = {
 		id = RUS_a_blow_to_peasant_associations
-		icon = GFX_goal_unknown
+		icon = GFX_rus_chains
 		cost = 5
 		prerequisite = {
 			focus = RUS_thunder_passed_over_russia
@@ -459,7 +483,7 @@
 	}
 	focus = {
 		id = RUS_Help_from_the_great_russians
-		icon = GFX_goal_unknown
+		icon = GFX_rus_friendship
 		cost = 5
 		prerequisite = {
 			focus = RUS_thunder_passed_over_russia
@@ -495,7 +519,7 @@
 	}
 	focus = {
 		id = RUS_everythings_under_control_d
-		icon = GFX_goal_unknown
+		icon = GFX_rus_chains
 		cost = 5
 		prerequisite = {
 			focus = RUS_a_blow_to_peasant_associations
@@ -518,7 +542,7 @@
 	}
 	focus = {
 		id = RUS_finalize_the_development_plan
-		icon = GFX_goal_unknown
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_everythings_under_control_d
@@ -554,7 +578,7 @@
 	}
 	focus = {
 		id = RUS_coalition_with_part_of_the_left
-		icon = GFX_goal_unknown
+		icon = GFX_rus_friendship
 		cost = 5
 		prerequisite = {
 			focus = RUS_weakening_of_the_radicals_in_the_duma
@@ -579,7 +603,7 @@
 	}
 	focus = {
 		id = RUS_weaken_rightwing_parties
-		icon = GFX_goal_unknown
+		icon = GFX_rus_chains
 		cost = 5
 		prerequisite = {
 			focus = RUS_weakening_of_the_radicals_in_the_duma
@@ -596,7 +620,10 @@
 	focus = {
 		id = RUS_economic_collapse
 		icon = GFX_deafening_great_depression
-		cost = 5
+		cost = 0.15
+		available = {
+			always = no
+		}
 		prerequisite = {
 			focus = RUS_coalition_with_part_of_the_left
 		}
@@ -615,7 +642,7 @@
 	}
 	focus = {
 		id = RUS_emergency_plan_to_save_the_economy
-		icon = GFX_goal_unknown
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_economic_collapse
@@ -632,7 +659,7 @@
 	}
 	focus = {
 		id = RUS_all_resources_for_stabilization
-		icon = GFX_goal_unknown
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_emergency_plan_to_save_the_economy
@@ -650,7 +677,7 @@
 	}
 	focus = {
 		id = RUS_demands_for_immediate_reform
-		icon = GFX_goal_unknown
+		icon = GFX_rus_duma
 		cost = 5
 		prerequisite = {
 			focus = RUS_all_resources_for_stabilization
@@ -690,7 +717,7 @@
 	}
 	focus = {
 		id = RUS_limited_reform
-		icon = GFX_goal_unknown
+		icon = GFX_rus_work
 		cost = 5
 		prerequisite = {
 			focus = RUS_all_resources_for_stabilization
@@ -709,7 +736,7 @@
 	}
 	focus = {
 		id = RUS_collaboration_with_monarchists
-		icon = GFX_goal_unknown
+		icon = GFX_rus_friendship
 		cost = 5
 		prerequisite = {
 			focus = RUS_limited_reform
@@ -727,7 +754,7 @@
 	focus = {
 		id = RUS_everythings_under_control
 		text = RUS_everythings_under_control_d
-		icon = GFX_goal_unknown
+		icon = GFX_rus_chains
 		cost = 5
 		prerequisite = {
 			focus = RUS_june_crisis
@@ -735,7 +762,7 @@
 		mutually_exclusive = {
 			focus = RUS_new_convocation_in_the_duma
 		}
-		x = 23
+		x = 21
 		y = 1
 
 		completion_reward = {
@@ -762,13 +789,13 @@
 	}
 	focus = {
 		id = RUS_the_weakening_of_the_unions
-		icon = GFX_goal_unknown
+		icon = GFX_rus_chains
 		cost = 5
 		prerequisite = {
 			focus = RUS_the_entry_of_troops_into_petrograd
 		}
-		x = -2
-		y = 1
+		x = -1
+		y = 2
 		relative_position_id = RUS_the_entry_of_troops_into_petrograd
 
 		completion_reward = {
@@ -781,7 +808,7 @@
 	}
 	focus = {
 		id = RUS_reinforce_the_garrisons_of_other_cities
-		icon = GFX_goal_unknown
+		icon = GFX_rus_chains
 		cost = 5
 		prerequisite = {
 			focus = RUS_the_entry_of_troops_into_petrograd
@@ -798,13 +825,13 @@
 	}
 	focus = {
 		id = RUS_cooperation_with_the_right_bloc
-		icon = GFX_goal_unknown
+		icon = GFX_rus_friendship
 		cost = 5
 		prerequisite = {
 			focus = RUS_the_entry_of_troops_into_petrograd
 		}
-		x = 2
-		y = 1
+		x = 1
+		y = 2
 		relative_position_id = RUS_the_entry_of_troops_into_petrograd
 
 		completion_reward = {
@@ -815,7 +842,10 @@
 	focus = {
 		id = RUS_economic_disaster
 		icon = GFX_deafening_great_depression
-		cost = 5
+		cost = 0.15
+		available = {
+			always = no
+		}
 		prerequisite = {
 			focus = RUS_the_weakening_of_the_unions
 		}
@@ -826,7 +856,7 @@
 			focus = RUS_cooperation_with_the_right_bloc
 		}
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = RUS_reinforce_the_garrisons_of_other_cities
 
 		completion_reward = {
@@ -854,7 +884,7 @@
 	}
 	focus = {
 		id = RUS_necessary_violence
-		icon = GFX_goal_unknown
+		icon = GFX_rus_chains
 		cost = 5
 		prerequisite = {
 			focus = RUS_economic_disaster
@@ -870,7 +900,7 @@
 	}
 	focus = {
 		id = RUS_stop_the_petrograd_unrest
-		icon = GFX_goal_unknown
+		icon = GFX_rus_chains
 		cost = 5
 		prerequisite = {
 			focus = RUS_use_of_great_russian_marches
@@ -891,7 +921,7 @@
 	}
 	focus = {
 		id = RUS_death_of_constitutionalism
-		icon = GFX_goal_unknown
+		icon = GFX_rus_chains
 		cost = 5
 		prerequisite = {
 			focus = RUS_stop_the_petrograd_unrest

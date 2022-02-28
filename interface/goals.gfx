@@ -1,5 +1,29 @@
 spriteTypes = {	
 
+	### Russia
+
+	SpriteType = {
+		name = "GFX_rus_duma"
+		texturefile = "gfx/interface/goals/rus_duma.dds"			
+	}	
+
+	SpriteType = {
+		name = "GFX_rus_friendship"
+		texturefile = "gfx/interface/goals/rus_friendship.dds"			
+	}	
+
+	SpriteType = {
+		name = "GFX_rus_chains"
+		texturefile = "gfx/interface/goals/rus_chains.dds"			
+	}	
+
+	SpriteType = {
+		name = "GFX_rus_work"
+		texturefile = "gfx/interface/goals/rus_work.dds"			
+	}	
+	
+	### 
+
 	SpriteType = {
 		name = "GFX_cadets_victory"
 		texturefile = "gfx/interface/goals/cadets_victory.dds"			
