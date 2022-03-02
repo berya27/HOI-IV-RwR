@@ -155,5 +155,275 @@ ideas = {
 				consumer_goods_factor = 0.10
 			}
 		}
+		
+		RUS_old_order_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			research_bonus = {
+				cl_tech = 0.05
+				ca_tech = 0.05
+				dd_tech = 0.05
+			}
+		}
+		
+		RUS_new_era_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			research_bonus = {
+				ss_tech = 0.05
+			}
+		}
+		
+		RUS_cruiser_development_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			research_bonus = {
+				cl_tech = 0.10
+				ca_tech = 0.10
+			}
+		}
+		
+		RUS_new_destroyers_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			research_bonus = {
+				dd_tech = 0.10
+			}
+		}
+		
+		RUS_admiralty_expansion_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				navy_leader_cost_factor = -0.15
+			}
+		}
+		
+		RUS_creation_of_the_baltic_line_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+		}
+		
+		RUS_submarine_development_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			research_bonus = {
+				ss_tech = 0.10
+			}
+		}
+		
+		RUS_breakthrough_in_maritime_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				invasion_preparation = -0.1
+				naval_doctrine_cost_factor = -0.1
+			}
+		} 
+		
+		RUS_cheaper_maritime_business_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			equipment_bonus = {
+				capital_ship = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				carrier = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				screen_ship = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				submarine = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			} 
+		} 
+		
+		RUS_imperial_aviation_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				air_doctrine_cost_factor = -0.1
+			}
+		} 
+		
+		RUS_russian_aces_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				air_ace_generation_chance_factor = 0.1
+				air_training_xp_gain_factor = 0.1
+			}
+		}
+		
+		RUS_development_of_the_ground_forces_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				land_doctrine_cost_factor = -0.1
+			}
+		} 
+		
+		RUS_talented_generals_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				land_leader_cost_factor = -0.10
+				experience_gain_army_factor = 0.10
+			}
+		}
+		
+		RUS_promotion_of_motorization_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+		}
+		
+		RUS_new_summon_wave_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription = 0.005
+			}
+		}
+		
+		RUS_army_of_victors_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				army_attack_factor  = 0.05
+				army_defence_factor = 0.10
+			}
+		}
+
+		RUS_new_generation_army_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			research_bonus = {
+				support_tech = 0.10
+			}
+		}
+		
+		RUS_tsars_tanks_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			research_bonus = {
+				armor = 0.10
+			}
+		}
+		
+		RUS_advanced_technique_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			equipment_bonus = {
+				armor = {
+					instant = yes 
+					maximum_speed = 0.10
+					reliability   = 0.10
+				}
+			}
+		}
+		
+		RUS_special_forces_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				special_forces_attack_factor  = 0.10
+				special_forces_defence_factor = 0.10
+			}
+			research_bonus = {
+				para_tech = 0.10
+			}
+		}
 	}
 }
