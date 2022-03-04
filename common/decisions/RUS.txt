@@ -1,0 +1,386 @@
+RUS_all_decisions = {
+	#_decision 
+	RUS_help_from_bankers_decision = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = RUS_help_from_bankers
+		}
+
+		fire_only_once = no
+		cost = 40
+		
+		days_remove = 60
+
+		days_re_enable = 300
+
+		complete_effect = {
+			add_stability = -0.05
+		}
+
+		modifier = {
+			production_speed_buildings_factor = 0.10
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	RUS_help_from_companies_decision = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = RUS_help_from_companies
+		}
+
+		fire_only_once = no
+		cost = 30
+		
+		days_remove = 60
+
+		days_re_enable = 300
+
+		complete_effect = {
+			add_stability = -0.05
+		}
+
+		modifier = {
+			industrial_capacity_factory = 0.10
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	RUS_redeem_the_volga_bankrupts_decision = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = RUS_limited_nationalization_flag
+		}
+
+		fire_only_once = yes
+		cost = 20
+		
+		days_remove = 70
+
+		remove_effect = {
+			217 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	RUS_nationalize_northern_enterprises_decision = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = RUS_limited_nationalization_flag
+		}
+
+		fire_only_once = yes
+		cost = 20
+		
+		days_remove = 60
+
+		remove_effect = {
+			214 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	RUS_take_control_of_the_ural_factories_decision = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = RUS_limited_nationalization_flag
+		}
+
+		fire_only_once = yes
+		cost = 20
+		
+		days_remove = 90
+
+		remove_effect = {
+			651 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	RUS_buy_out_siberian_companies_decision = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = RUS_limited_nationalization_flag
+		}
+
+		fire_only_once = yes
+		cost = 20
+		
+		days_remove = 80
+
+		remove_effect = {
+			517 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	RUS_industrialize_yekaterinburg_decision = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = RUS_siberian_heart_project_flag
+		}
+
+		fire_only_once = yes
+		cost = 20
+		
+		days_remove = 220
+
+		remove_effect = {
+			653 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	RUS_develop_omsk_industry_decision = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = RUS_siberian_heart_project_flag
+		}
+
+		fire_only_once = yes
+		cost = 20
+		
+		days_remove = 230
+
+		remove_effect = {
+			571 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	RUS_expand_the_role_of_novosibirsk_decision = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = RUS_siberian_heart_project_flag
+		}
+
+		fire_only_once = yes
+		cost = 20
+		
+		days_remove = 240
+
+		remove_effect = {
+			570 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	RUS_industrialize_krasnoyarsk_decision = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = RUS_siberian_heart_project_flag
+		}
+
+		fire_only_once = yes
+		cost = 20
+		
+		days_remove = 250
+
+		remove_effect = {
+			568 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	RUS_enlarge_irkutsk_capacities_decision = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = RUS_siberian_heart_project_flag
+		}
+
+		fire_only_once = yes
+		cost = 20
+		
+		days_remove = 260
+
+		remove_effect = {
+			566 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	RUS_invite_romania_decision = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = RUS_influence_sphere_flag
+		}
+
+		fire_only_once = yes
+		cost = 10
+
+		complete_effect = {
+			ROM = {
+				country_event = russia.30
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+	
+	RUS_invite_albania_decision = {
+		icon = generic_research
+
+		visible = {
+			has_country_flag = RUS_influence_sphere_flag
+		}
+
+		fire_only_once = yes
+		cost = 10
+
+		complete_effect = {
+			ALB = {
+				country_event = russia.30
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+}

@@ -1,0 +1,10 @@
+RUS_all_decisions = {
+	icon = generic_independence
+	allowed = {
+		tag = RUS
+	}
+	
+	visible = {
+	
+	}
+}

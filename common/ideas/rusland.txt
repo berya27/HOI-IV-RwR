@@ -316,7 +316,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				land_doctrine_cost_factor = -0.1
+				army_doctrine_cost_factor = -0.1
 			}
 		} 
 		
@@ -328,7 +328,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				land_leader_cost_factor = -0.10
+				army_leader_cost_factor = -0.10
 				experience_gain_army_factor = 0.10
 			}
 		}
@@ -423,6 +423,169 @@ ideas = {
 			}
 			research_bonus = {
 				para_tech = 0.10
+			}
+		}
+		
+		RUS_provide_schools_with_funds_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				political_power_gain = 0.2
+			}
+		}
+		
+		RUS_opening_of_new_institutions_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				research_speed_factor = 0.05
+			}
+		}
+		
+		RUS_rescue_of_the_bankers_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		
+		RUS_business_support_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		
+		RUS_guaranteed_social_package_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				consumer_goods_factor = 0.10
+			}
+		}
+		
+		RUS_ally_with_companies_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				industrial_capacity_factory = 0.05
+				
+				tank_manufacturer_cost_factor = -0.10
+				naval_manufacturer_cost_factor = -0.10
+				aircraft_manufacturer_cost_factor = -0.10
+			}
+		}
+
+		RUS_generous_lending_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		
+		RUS_the_new_role_of_the_state_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		
+		RUS_support_for_farmers_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				training_time_factor = -0.05
+			}
+		}
+		
+		RUS_expand_existing_businesses_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		RUS_expand_existing_businesses_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		RUS_meeting_in_tsargrad_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				research_speed_factor = 0.10
+			}
+		}
+		
+		RUS_action_time_idea = {
+		
+			removal_cost = -1
+			allowed = { always = no }
+			
+			picture = generic_manpower_bonus
+			
+			modifier = { 
+				training_time_factor = 0.05
 			}
 		}
 	}

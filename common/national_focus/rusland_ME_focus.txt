@@ -1,0 +1,813 @@
+focus_tree = {
+	id = rusland_michaels_empire_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = RUS
+		}
+	}
+	
+	shared_focus = RUS_empire_fleet
+	shared_focus = RUS_state_army
+	
+	default = no
+	
+	focus = {
+		id = RUS_michaels_empire
+		icon = GFX_rus_work
+		cost = 5
+		x = 10
+		y = 0
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = RUS_the_eagle_took_to_the_sky
+		icon = GFX_rus_work
+		cost = 5
+		x = 21
+		y = 2
+
+		completion_reward = {
+			add_political_power = 50
+			country_event = russia.19
+		}
+	}
+	focus = {
+		id = RUS_commission_on_illiteracy
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_michaels_empire
+		}
+		x = -6
+		y = 1
+		relative_position_id = RUS_michaels_empire
+
+		completion_reward = {
+			country_event = russia.15
+		}
+	}
+	focus = {
+		id = RUS_come_to_terms_with_the_problem
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_commission_on_illiteracy
+		}
+		mutually_exclusive = {
+			focus = RUS_allrussian_education_project
+		}
+		x = 1
+		y = 1
+		relative_position_id = RUS_commission_on_illiteracy
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = RUS_the_question_of_industrialization
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_michaels_empire
+		}
+		x = 6
+		y = 1
+		relative_position_id = RUS_michaels_empire
+
+		completion_reward = {
+			country_event = russia.18
+		}
+	}
+	focus = {
+		id = RUS_allrussian_education_project
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_commission_on_illiteracy
+		}
+		mutually_exclusive = {
+			focus = RUS_come_to_terms_with_the_problem
+		}
+		x = -1
+		y = 1
+		relative_position_id = RUS_commission_on_illiteracy
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = RUS_provide_schools_with_funds
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_allrussian_education_project
+			focus = RUS_come_to_terms_with_the_problem
+		}
+		x = 0
+		y = 2
+		relative_position_id = RUS_commission_on_illiteracy
+
+		completion_reward = {
+			add_ideas = RUS_provide_schools_with_funds_idea
+			add_political_power = 30
+		}
+	}
+	focus = {
+		id = RUS_opening_of_new_institutions
+		icon = GFX_rus_work
+		cost = 5
+		available = {
+			has_completed_focus = RUS_allrussian_education_project
+		}
+		prerequisite = {
+			focus = RUS_provide_schools_with_funds
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_provide_schools_with_funds
+
+		completion_reward = {
+			add_ideas = RUS_opening_of_new_institutions_idea
+		}
+	}
+	focus = {
+		id = RUS_creation_of_scientific_centers
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_opening_of_new_institutions
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_opening_of_new_institutions
+
+		completion_reward = {
+			add_research_slot = 1
+			
+			remove_ideas = RUS_illiteracy
+			
+			add_timed_idea = {
+				idea = RUS_illiteracy
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = RUS_phased_recovery
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_michaels_empire
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_michaels_empire
+
+		completion_reward = {
+			add_political_power = 20
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = RUS_doubleheaded_eagle_project
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_phased_recovery
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_phased_recovery
+
+		completion_reward = {
+			country_event = russia.16
+		}
+	}
+	focus = {
+		id = RUS_rescue_of_the_bankers
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_doubleheaded_eagle_project
+		}
+		x = -3
+		y = 1
+		relative_position_id = RUS_doubleheaded_eagle_project
+
+		completion_reward = {
+			add_ideas = RUS_rescue_of_the_bankers_idea
+			set_country_flag = RUS_help_from_bankers
+			unlock_decision_tooltip = RUS_help_from_bankers_decision
+		}
+	}
+	focus = {
+		id = RUS_business_support
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_doubleheaded_eagle_project
+		}
+		x = -1
+		y = 1
+		relative_position_id = RUS_doubleheaded_eagle_project
+
+		completion_reward = {
+			add_ideas = RUS_business_support_idea
+		}
+	}
+	focus = {
+		id = RUS_help_for_the_unemployed
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_doubleheaded_eagle_project
+		}
+		x = 1
+		y = 1
+		relative_position_id = RUS_doubleheaded_eagle_project
+
+		completion_reward = {
+			add_political_power = 20
+			add_stability = 0.05
+			
+			add_popularity = { ideology = paternalism popularity = 0.05 }
+			
+		}
+	}
+	focus = {
+		id = RUS_guaranteed_social_package
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_doubleheaded_eagle_project
+		}
+		x = 3
+		y = 1
+		relative_position_id = RUS_doubleheaded_eagle_project
+
+		completion_reward = {
+			add_stability = 0.05
+			
+			add_popularity = { ideology = paternalism popularity = 0.05 }
+			
+			add_timed_idea = {
+				idea = RUS_guaranteed_social_package_idea
+				days = 120
+			}
+		}
+	}
+	focus = {
+		id = RUS_new_year_new_stage
+		icon = GFX_rus_work
+		cost = 5
+		available = {
+			date > 1931.1.1
+		}
+		prerequisite = {
+			focus = RUS_rescue_of_the_bankers
+		}
+		prerequisite = {
+			focus = RUS_business_support
+		}
+		prerequisite = {
+			focus = RUS_help_for_the_unemployed
+		}
+		prerequisite = {
+			focus = RUS_guaranteed_social_package
+		}
+		x = 0
+		y = 2
+		relative_position_id = RUS_doubleheaded_eagle_project
+
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = RUS_ally_with_companies
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_new_year_new_stage
+		}
+		x = -2
+		y = 1
+		relative_position_id = RUS_new_year_new_stage
+
+		completion_reward = {
+			add_ideas = RUS_ally_with_companies_idea
+			set_country_flag = RUS_help_from_companies
+			unlock_decision_tooltip = RUS_help_from_companies_decision
+			
+		}
+	}
+	focus = {
+		id = RUS_generous_lending
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_ally_with_companies
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_ally_with_companies
+
+		completion_reward = {
+			add_ideas = RUS_generous_lending_idea
+			
+			add_popularity = { ideology = paternalism popularity = 0.05 }
+		}
+	}
+	focus = {
+		id = RUS_limited_nationalization
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_new_year_new_stage
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_new_year_new_stage
+
+		completion_reward = {
+			set_country_flag = RUS_limited_nationalization_flag
+			unlock_decision_tooltip = RUS_redeem_the_volga_bankrupts_decision
+			unlock_decision_tooltip = RUS_nationalize_northern_enterprises_decision
+			unlock_decision_tooltip = RUS_take_control_of_the_ural_factories_decision
+			unlock_decision_tooltip = RUS_buy_out_siberian_companies_decision
+			
+		}
+	}
+	focus = {
+		id = RUS_the_new_role_of_the_state
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_limited_nationalization
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_limited_nationalization
+
+		completion_reward = {
+			add_ideas = RUS_the_new_role_of_the_state_idea
+		}
+	}
+	focus = {
+		id = RUS_support_for_farmers
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_new_year_new_stage
+		}
+		x = 2
+		y = 1
+		relative_position_id = RUS_new_year_new_stage
+
+		completion_reward = {
+			add_ideas = RUS_support_for_farmers_idea
+			
+			add_popularity = { ideology = paternalism popularity = 0.05 }
+		}
+	}
+	focus = {
+		id = RUS_stolypins_ideas_are_not_forgotten
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_support_for_farmers
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_support_for_farmers
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = RUS_hopes_are_justified
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_generous_lending
+		}
+		prerequisite = {
+			focus = RUS_the_new_role_of_the_state
+		}
+		prerequisite = {
+			focus = RUS_stolypins_ideas_are_not_forgotten
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_the_new_role_of_the_state
+
+		completion_reward = {
+			remove_ideas = RUS_great_depression
+			
+			add_timed_idea = {
+				idea = RUS_great_depression
+				days = 180
+			}
+			
+			country_event = russia.17
+		}
+	}
+	focus = {
+		id = RUS_recognize_your_position
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_the_question_of_industrialization
+		}
+		mutually_exclusive = {
+			focus = RUS_development_plan_development
+		}
+		x = -1
+		y = 1
+		relative_position_id = RUS_the_question_of_industrialization
+
+		completion_reward = {
+			add_political_power = 40
+		}
+	}
+	focus = {
+		id = RUS_development_plan_development
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_the_question_of_industrialization
+		}
+		mutually_exclusive = {
+			focus = RUS_recognize_your_position
+		}
+		x = 1
+		y = 1
+		relative_position_id = RUS_the_question_of_industrialization
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = RUS_expand_existing_businesses
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_recognize_your_position
+			focus = RUS_development_plan_development
+		}
+		x = 0
+		y = 2
+		relative_position_id = RUS_the_question_of_industrialization
+
+		completion_reward = {
+			add_ideas = RUS_expand_existing_businesses_idea
+			
+			add_popularity = { ideology = paternalism popularity = 0.05 }
+		}
+	}
+	focus = {
+		id = RUS_new_factories_of_the_volga_region
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_expand_existing_businesses
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_expand_existing_businesses
+
+		completion_reward = {
+			239 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = RUS_siberian_heart_project
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_new_factories_of_the_volga_region
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_new_factories_of_the_volga_region
+
+		completion_reward = {
+			set_country_flag = RUS_siberian_heart_project_flag
+			unlock_decision_tooltip = RUS_industrialize_yekaterinburg_decision
+			unlock_decision_tooltip = RUS_develop_omsk_industry_decision
+			unlock_decision_tooltip = RUS_expand_the_role_of_novosibirsk_decision
+			unlock_decision_tooltip = RUS_industrialize_krasnoyarsk_decision
+			unlock_decision_tooltip = RUS_enlarge_irkutsk_capacities_decision
+			
+			remove_ideas = RUS_weak_industrialization
+			
+			add_timed_idea = {
+				idea = RUS_weak_industrialization
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = RUS_eye_to_the_west
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_the_eagle_took_to_the_sky
+		}
+		x = -3
+		y = 1
+		relative_position_id = RUS_the_eagle_took_to_the_sky
+
+		completion_reward = {
+			army_experience = 20
+			add_command_power = 20
+		}
+	}
+	focus = {
+		id = RUS_new_doctrine
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_eye_to_the_west
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_eye_to_the_west
+
+		completion_reward = {
+			add_political_power = 40
+			create_faction = "Петроградский Пакт"
+		}
+	}
+	focus = {
+		id = RUS_simplifying_autonomy
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_new_doctrine
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_new_doctrine
+
+		completion_reward = {
+			annex_country = {
+				target = POL
+				transfer_troops = yes
+			}
+			
+			annex_country = {
+				target = FIN
+				transfer_troops = yes
+			}
+			
+			hidden_effect = {
+				country_event = {
+					event = russia.20
+					days = 60
+				}
+			}
+		}
+	}
+	focus = {
+		id = RUS_visit_to_belgrade
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_simplifying_autonomy
+		}
+		x = 1
+		y = 1
+		relative_position_id = RUS_simplifying_autonomy
+
+		completion_reward = {
+			country_event = russia.21
+		}
+	}
+	focus = {
+		id = RUS_meeting_in_tsargrad
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_simplifying_autonomy
+		}
+		x = -1
+		y = 1
+		relative_position_id = RUS_simplifying_autonomy
+
+		completion_reward = {
+			GRE = {
+				country_event = russia.22 
+			}
+		}
+	}
+	focus = {
+		id = RUS_petrograd_sphere_of_influence
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_meeting_in_tsargrad
+		}
+		prerequisite = {
+			focus = RUS_visit_to_belgrade
+		}
+		x = 0
+		y = 2
+		relative_position_id = RUS_simplifying_autonomy
+
+		completion_reward = {
+			set_country_flag = RUS_influence_sphere_flag
+			unlock_decision_tooltip = RUS_invite_romania_decision
+			unlock_decision_tooltip = RUS_invite_albania_decision
+		}
+	}
+	focus = {
+		id = RUS_action_time
+		icon = GFX_rus_work
+		cost = 5
+		available = {
+			date > 1932.1.1
+		}
+		prerequisite = {
+			focus = RUS_the_eagle_took_to_the_sky
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_the_eagle_took_to_the_sky
+
+		completion_reward = {
+			add_ideas = RUS_action_time_idea
+			
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = RUS_claims_for_koenigsberg
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_action_time
+		}
+		x = -1
+		y = 1
+		relative_position_id = RUS_action_time
+
+		completion_reward = {
+			add_political_power = -10
+		
+			add_state_claim = 763
+		}
+	}
+	focus = {
+		id = RUS_remember_luzhichany
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_action_time
+		}
+		x = 1
+		y = 1
+		relative_position_id = RUS_action_time
+
+		completion_reward = {
+			country_event = russia.31
+		}
+	}
+	focus = {
+		id = RUS_way_to_berlin
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_claims_for_koenigsberg
+		}
+		prerequisite = {
+			focus = RUS_remember_luzhichany
+		}
+		x = 0
+		y = 2
+		relative_position_id = RUS_action_time
+
+		completion_reward = {
+			declare_war_on = {
+				target = GER
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = RUS_eye_to_the_east
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_the_eagle_took_to_the_sky
+		}
+		x = 3
+		y = 1
+		relative_position_id = RUS_the_eagle_took_to_the_sky
+
+		completion_reward = {
+			army_experience = 20
+			add_command_power = 20
+		}
+	}
+	focus = {
+		id = RUS_resurrect_the_zheltorossiya
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_eye_to_the_east
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_eye_to_the_east
+
+		completion_reward = {
+			country_event = russia.32
+		}
+	}
+	focus = {
+		id = RUS_search_for_loyal_forces_in_the_region
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_resurrect_the_zheltorossiya
+		}
+		x = -1
+		y = 1
+		relative_position_id = RUS_resurrect_the_zheltorossiya
+
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = RUS_export_of_arms_to_manchuria
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_resurrect_the_zheltorossiya
+		}
+		x = 1
+		y = 1
+		relative_position_id = RUS_resurrect_the_zheltorossiya
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_operation_taming_the_dragon
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_search_for_loyal_forces_in_the_region
+		}
+		prerequisite = {
+			focus = RUS_export_of_arms_to_manchuria
+		}
+		x = 0
+		y = 2
+		relative_position_id = RUS_resurrect_the_zheltorossiya
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_further_path_of_zheltorossia
+		icon = GFX_rus_work
+		cost = 5
+		prerequisite = {
+			focus = RUS_operation_taming_the_dragon
+		}
+		x = 0
+		y = 1
+		relative_position_id = RUS_operation_taming_the_dragon
+
+		completion_reward = {
+			
+		}
+	}
+}
