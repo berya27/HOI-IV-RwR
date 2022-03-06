@@ -1,1 +1,2 @@
 KOS	= "countries/Kosovo.txt"
+ZHE = "countries/Zheltorossiya.txt

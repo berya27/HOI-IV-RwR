@@ -774,7 +774,15 @@ focus_tree = {
 		relative_position_id = RUS_resurrect_the_zheltorossiya
 
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
 			
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -150
+			}
 		}
 	}
 	focus = {
@@ -792,7 +800,55 @@ focus_tree = {
 		relative_position_id = RUS_resurrect_the_zheltorossiya
 
 		completion_reward = {
-			
+			random_list = {
+				10 = {
+					country_event = russia.32
+				}
+				
+				40 = {
+					country_event = russia.33
+					
+					ZHE = {
+						transfer_state = 761
+						transfer_state = 714
+						
+						declare_war_on = {
+							target = MAN
+							type = annex_everything
+						}
+					}
+				}
+				
+				30 = { 
+					country_event = russia.34
+					
+					ZHE = {
+						transfer_state = 761
+						transfer_state = 714
+						transfer_state = 717
+						transfer_state = 715
+						
+						declare_war_on = {
+							target = MAN
+							type = annex_everything
+						} 
+					}
+				}
+				
+				20 = {
+					country_event = russia.35
+				
+					ZHE = {
+						transfer_state = 761
+						transfer_state = 714
+						transfer_state = 717
+						transfer_state = 715
+						transfer_state = 328
+					}
+					
+					puppet = ZHE
+				}
+			}
 		}
 	}
 	focus = {

@@ -610,3 +610,67 @@ country_event = {
 		ai_chance = { factor = 100 }
 	}
 }
+
+country_event = {
+	id = russia.33
+	title = russia.33.t
+	desc = russia.33.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.33.a
+		ai_chance = { factor = 100 }
+		
+		
+	}
+}
+
+country_event = {
+	id = russia.34
+	title = russia.34.t
+	desc = russia.34.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.34.a
+		ai_chance = { factor = 100 }
+		
+		
+	}
+}
+
+country_event = {
+	id = russia.35
+	title = russia.35.t
+	desc = russia.35.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.35.a
+		ai_chance = { factor = 100 }
+		
+		
+	}
+}
+
+country_event = {
+	id = russia.36
+	title = russia.36.t
+	desc = russia.36.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.36.a
+		ai_chance = { factor = 100 }
+		
+		
+	}
+}

@@ -15,4 +15,4 @@ tags={
 }
 name="RwR SevaEdition"
 supported_version="1.10.8"
-path="C:/Users/Lemdefer/Documents/Paradox Interactive/Hearts of Iron IV/mod/RwR"
+path="mod/RwR"
