@@ -1,4 +1,12 @@
 version="1.0"
+
+replace_patch = "common/characters"
+replace_patch = "common/generation"
+replace_patch = "common/general"
+replace_patch = "map"
+replace_patch = "history/states"
+replace_patch = "gfx/loadingscreens"
+
 tags={
 	"Alternative History"
 	"Ideologies"
@@ -14,5 +22,5 @@ tags={
 	"Sound"
 }
 name="RwR SevaEdition"
-supported_version="1.10.8"
+supported_version="1.11.9"
 path="mod/RwR"

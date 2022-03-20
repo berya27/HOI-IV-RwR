@@ -1,0 +1,814 @@
+focus_tree = {
+	id = rusland_focus_esmon
+	country = {
+		factor = 0
+		modifier = {
+			add = 40
+			tag = RUS
+		}
+	}
+	default = no
+	focus = {
+		id = RUS_focus1
+		icon = GFX_rus_work
+		cost = 5
+		x = 8
+		y = 1
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_focus2
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus1
+		prerequisite = {
+			focus = RUS_focus1
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus3
+		icon = GFX_rus_work
+		cost = 5
+		x = -3
+		y = 1
+		relative_position_id = RUS_focus2
+		prerequisite = {
+			focus = RUS_focus2
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus4
+		icon = GFX_rus_work
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = RUS_focus2
+		prerequisite = {
+			focus = RUS_focus2
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus5
+		icon = GFX_rus_work
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = RUS_focus2
+		prerequisite = {
+			focus = RUS_focus2
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus6
+		icon = GFX_rus_work
+		cost = 5
+		x = 3
+		y = 1
+		relative_position_id = RUS_focus2
+		prerequisite = {
+			focus = RUS_focus2
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus7
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = RUS_focus2
+		prerequisite = {
+			focus = RUS_focus3
+		}
+		prerequisite = {
+			focus = RUS_focus4
+		}
+		prerequisite = {
+			focus = RUS_focus5
+		}
+		prerequisite = {
+			focus = RUS_focus6
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus8
+		icon = GFX_rus_work
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = RUS_focus7
+		prerequisite = {
+			focus = RUS_focus7
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus9
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus8
+		prerequisite = {
+			focus = RUS_focus8
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus10
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus7
+		prerequisite = {
+			focus = RUS_focus7
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus11
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus10
+		prerequisite = {
+			focus = RUS_focus10
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus12
+		icon = GFX_rus_work
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = RUS_focus7
+		prerequisite = {
+			focus = RUS_focus7
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus13
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus12
+		prerequisite = {
+			focus = RUS_focus12
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus14
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus11
+		prerequisite = {
+			focus = RUS_focus11
+		}
+		prerequisite = {
+			focus = RUS_focus9
+		}
+		prerequisite = {
+			focus = RUS_focus13
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus15
+		icon = GFX_rus_work
+		cost = 5
+		x = -4
+		y = 1
+		relative_position_id = RUS_focus14
+		prerequisite = {
+			focus = RUS_focus14
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus16
+		icon = GFX_rus_work
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = RUS_focus14
+		prerequisite = {
+			focus = RUS_focus14
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus17
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus14
+		prerequisite = {
+			focus = RUS_focus14
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus18
+		icon = GFX_rus_work
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = RUS_focus14
+		prerequisite = {
+			focus = RUS_focus14
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus19
+		icon = GFX_rus_work
+		cost = 5
+		x = 4
+		y = 1
+		relative_position_id = RUS_focus14
+		prerequisite = {
+			focus = RUS_focus14
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus20
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus17
+		prerequisite = {
+			focus = RUS_focus17
+		}
+		prerequisite = {
+			focus = RUS_focus16
+		}
+		prerequisite = {
+			focus = RUS_focus15
+		}
+		prerequisite = {
+			focus = RUS_focus18
+		}
+		prerequisite = {
+			focus = RUS_focus19
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus21
+		icon = GFX_rus_work
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = RUS_focus22
+		prerequisite = {
+			focus = RUS_focus22
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus22
+		icon = GFX_rus_work
+		cost = 5
+		x = 17
+		y = 2
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus23
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus22
+		prerequisite = {
+			focus = RUS_focus22
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus24
+		icon = GFX_rus_work
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = RUS_focus22
+		prerequisite = {
+			focus = RUS_focus22
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus25
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus23
+		prerequisite = {
+			focus = RUS_focus21
+		}
+		prerequisite = {
+			focus = RUS_focus23
+		}
+		prerequisite = {
+			focus = RUS_focus24
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus26
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus25
+		prerequisite = {
+			focus = RUS_focus25
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus27
+		icon = GFX_rus_work
+		cost = 5
+		x = 3
+		y = 1
+		relative_position_id = RUS_focus35
+		prerequisite = {
+			focus = RUS_focus35
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus28
+		icon = GFX_rus_work
+		cost = 5
+		x = -3
+		y = 1
+		relative_position_id = RUS_focus35
+		prerequisite = {
+			focus = RUS_focus35
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus29
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus28
+		prerequisite = {
+			focus = RUS_focus28
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus30
+		icon = GFX_rus_work
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = RUS_focus29
+		prerequisite = {
+			focus = RUS_focus29
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus31
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus30
+		prerequisite = {
+			focus = RUS_focus30
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus32
+		icon = GFX_rus_work
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = RUS_focus29
+		prerequisite = {
+			focus = RUS_focus29
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus33
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus32
+		prerequisite = {
+			focus = RUS_focus32
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus34
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 3
+		relative_position_id = RUS_focus29
+		prerequisite = {
+			focus = RUS_focus31
+		}
+		prerequisite = {
+			focus = RUS_focus33
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus35
+		icon = GFX_rus_work
+		cost = 5
+		x = 22
+		y = 6
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus36
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus27
+		prerequisite = {
+			focus = RUS_focus27
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus37
+		icon = GFX_rus_work
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = RUS_focus36
+		prerequisite = {
+			focus = RUS_focus36
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus38
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus37
+		prerequisite = {
+			focus = RUS_focus37
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus39
+		icon = GFX_rus_work
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = RUS_focus36
+		prerequisite = {
+			focus = RUS_focus36
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus40
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus39
+		prerequisite = {
+			focus = RUS_focus39
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus41
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = RUS_focus36
+		prerequisite = {
+			focus = RUS_focus37
+		}
+		prerequisite = {
+			focus = RUS_focus39
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus42
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus41
+		prerequisite = {
+			focus = RUS_focus38
+		}
+		prerequisite = {
+			focus = RUS_focus41
+		}
+		prerequisite = {
+			focus = RUS_focus40
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus43
+		icon = GFX_rus_work
+		cost = 5
+		x = 12
+		y = 10
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus44
+		icon = GFX_rus_work
+		cost = 5
+		x = -3
+		y = 1
+		relative_position_id = RUS_focus43
+		prerequisite = {
+			focus = RUS_focus43
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus45
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus44
+		prerequisite = {
+			focus = RUS_focus44
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus46
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus45
+		prerequisite = {
+			focus = RUS_focus45
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus47
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus43
+		prerequisite = {
+			focus = RUS_focus43
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus48
+		icon = GFX_rus_work
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = RUS_focus47
+		prerequisite = {
+			focus = RUS_focus47
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus49
+		icon = GFX_rus_work
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = RUS_focus47
+		prerequisite = {
+			focus = RUS_focus47
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus50
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = RUS_focus47
+		prerequisite = {
+			focus = RUS_focus48
+		}
+		prerequisite = {
+			focus = RUS_focus49
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus51
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus50
+		prerequisite = {
+			focus = RUS_focus50
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus52
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus51
+		prerequisite = {
+			focus = RUS_focus51
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus53
+		icon = GFX_rus_work
+		cost = 5
+		x = 3
+		y = 1
+		relative_position_id = RUS_focus43
+		prerequisite = {
+			focus = RUS_focus43
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus54
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus53
+		prerequisite = {
+			focus = RUS_focus53
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = RUS_focus55
+		icon = GFX_rus_work
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = RUS_focus54
+		prerequisite = {
+			focus = RUS_focus54
+		}
+		completion_reward = {
+			
+		}
+	}
+}
