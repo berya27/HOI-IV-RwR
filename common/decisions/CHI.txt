@@ -1,0 +1,65 @@
+CHI_education = {
+    education_schools = {
+	    visible = {
+            has_completed_focus = CHI_edu_2
+        }
+	    cost = 25
+		fire_only_once = yes
+        complete_effect = {
+		 
+        }
+    }
+	education_books = {
+	    visible = {
+            has_completed_focus = CHI_edu_2
+        }
+	    cost = 25
+		fire_only_once = yes
+        complete_effect = {
+		 
+        }
+    }
+	education_teachers = {
+	    visible = {
+            has_completed_focus = CHI_edu_2
+        }
+	    cost = 25
+		fire_only_once = yes
+        complete_effect = {
+		 
+        }
+    }
+}
+
+CHI_famine = {
+    famine_wheat = {
+	    visible = {
+            has_completed_focus = CHI_fam_4
+        }
+	    cost = 25
+		fire_only_once = yes
+        complete_effect = {
+		 
+        }
+    }
+	famine_mechanization = {
+	    visible = {
+            has_completed_focus = CHI_fam_4
+        }
+	    cost = 25
+		fire_only_once = yes
+        complete_effect = {
+		 
+        }
+    }
+	famine_prices = {
+	    visible = {
+            has_completed_focus = CHI_fam_4
+        }
+	    cost = 25
+		fire_only_once = yes
+        complete_effect = {
+		 
+        }
+    }
+}
